@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Prevent browser caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Convite: 15 Anos - Regina</title>
+
+    <!-- SEO / Open Graph -->
+    <meta property="og:title" content="Você está convidado para os 70 anos da Regina!">
+    <meta property="og:description" content="Embarque nessa noite mágica. Clique para ver os detalhes.">
+    <meta property="og:image" content="https://clique-e-abra.mforge.com.br/savethedate-regina70anos/assets/folha_1780517997300.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Envelope Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z'/></svg>">
+
+    <!-- Config -->
+    <script src="config.js?v=1780517997300"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+            background-color: #000;
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* State Classes */
+        .invisivel {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .visivel {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Main Container */
+        #wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        #mainContainer {
+            position: relative;
+            width: 100%;
+            max-width: 480px;
+            height: 100dvh;
+            max-height: 854px;
+            background: #000;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        /* Background Image */
+        .camada {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        /* Sparkle Overlays */
+        .brilho-camada {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 15;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .brilho-camada.ativo {
+            opacity: 1;
+        }
+
+        /* Interaction Overlay */
+        #interactionOverlay {
+            position: absolute;
+            inset: 0;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.35);
+            transition: opacity 0.7s ease;
+        }
+
+        /* Text Stroke */
+        .texto-capa {
+            color: white;
+            text-shadow:
+                -1px -1px 0 #555,
+                1px -1px 0 #555,
+                -1px 1px 0 #555,
+                1px 1px 0 #555;
+        }
+
+        /* Hand Animation */
+        @keyframes clicando {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(0.9); }
+        }
+
+        .animar-clique {
+            animation: clicando 1.5s infinite ease-in-out;
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* Mute Button */
+        #btnMute {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 40;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        #btnMute:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #btnMute.muted {
+            background: rgba(239, 68, 68, 0.5);
+        }
+
+        /* Loading Screen */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Music icon pulse */
+        @keyframes musicPulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(255,255,255,0.3)); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 16px rgba(255,255,255,0.6)); }
+        }
+
+        .music-icon-pulse {
+            animation: musicPulse 1.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="wrapper">
+        <div id="mainContainer">
+
+            <!-- Background Image (Folha Preenchida) - Layer 1 -->
+            <img id="fundoTelaImg" class="camada z-10 visivel" style="z-index: 10;">
+
+            <!-- Audio -->
+            <audio id="musicaFundo" loop preload="auto"></audio>
+
+            <!-- Mute Button (hidden until music starts) -->
+            <button id="btnMute" class="invisivel">
+                <i class="fa-solid fa-volume-high" id="iconMute"></i>
+            </button>
+
+            <!-- Sparkle Overlays -->
+            <img id="brilhoEsquerdo" class="brilho-camada" src="" alt="">
+            <img id="brilhoDireito" class="brilho-camada" src="" alt="">
+            <img id="brilhoCentro" class="brilho-camada" src="" alt="">
+
+            <!-- Interaction Overlay — "Clique para tocar a música!" -->
+            <div id="interactionOverlay" class="animate-pulse" onclick="startMusic()">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span class="texto-capa" style="font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">Clique</span>
+                    <i class="fa-solid fa-music music-icon-pulse" style="font-size: 2.5rem; color: white; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));"></i>
+                </div>
+                <h1 class="texto-capa" style="font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; margin-top: 4px;">
+                    para tocar a música!
+                </h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MAIN SCRIPT -->
+    <script>
+        let config = null;
+        let estaMutado = false;
+        let musicaIniciada = false;
+
+        // References
+        const fundoTelaImg = document.getElementById('fundoTelaImg');
+        const audio = document.getElementById('musicaFundo');
+        const btnMute = document.getElementById('btnMute');
+        const iconMute = document.getElementById('iconMute');
+        const interactionOverlay = document.getElementById('interactionOverlay');
+
+        // iOS viewport fix
+        function setViewportHeight() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        window.addEventListener('resize', setViewportHeight);
+        setViewportHeight();
+
+        async function init() {
+            try {
+                if (typeof window.config !== 'undefined') {
+                    config = window.config;
+                    applyConfig();
+                } else {
+                    console.error("Erro: config.js não foi carregado corretamente.");
+                }
+                document.getElementById('loader').style.display = 'none';
+            } catch (err) {
+                console.error("Erro ao carregar config:", err);
+            }
+        }
+
+        function applyConfig() {
+            // SEO
+            if (config.convite && config.convite.seo) {
+                document.title = config.convite.seo.pageTitle || "Save The Date";
+                document.querySelector("meta[property='og:title']").content = config.convite.seo.ogTitle || "";
+                document.querySelector("meta[property='og:description']").content = config.convite.seo.ogDescription || "";
+            }
+
+            // OG Image
+            if (config.assets && config.assets.folhaPreenchida) {
+                document.querySelector("meta[property='og:image']").content = config.assets.folhaPreenchida;
+            }
+
+            // Background Image (folha preenchida displayed directly)
+            if (config.assets && config.assets.folhaPreenchida) {
+                fundoTelaImg.src = config.assets.folhaPreenchida;
+            }
+
+            // Music
+            if (config.assets && config.assets.musica) {
+                audio.src = config.assets.musica;
+                audio.load();
+            } else {
+                // No music — hide the interaction overlay and show sparkles directly
+                interactionOverlay.style.display = 'none';
+                showSparkles();
+            }
+
+            // Sparkle GIF sources
+            document.getElementById('brilhoEsquerdo').src = "assets/brilho_esquerdo_1780517997300.gif";
+            document.getElementById('brilhoDireito').src = "assets/brilho_direito_1780517997300.gif";
+            document.getElementById('brilhoCentro').src = "assets/brilho_centro_1780517997300.gif";
+
+            // If no music configured, show sparkles immediately
+            if (!config.assets || !config.assets.musica) {
+                showSparkles();
+            }
+        }
+
+        function startMusic() {
+            if (musicaIniciada) return;
+            musicaIniciada = true;
+
+            // Fade out interaction overlay
+            interactionOverlay.style.opacity = '0';
+            interactionOverlay.style.pointerEvents = 'none';
+            setTimeout(() => { interactionOverlay.style.display = 'none'; }, 700);
+
+            // Play music
+            if (audio && config.assets && config.assets.musica) {
+                audio.volume = 0.5;
+                audio.play().catch(e => {
+                    setTimeout(() => audio.play(), 500);
+                });
+            }
+
+            // Show mute button
+            btnMute.classList.remove('invisivel');
+
+            // Show sparkles
+            showSparkles();
+        }
+
+        function showSparkles() {
+            if (config.config && config.config.brilhos) {
+                if (config.config.brilhos.esquerdo) document.getElementById('brilhoEsquerdo').classList.add('ativo');
+                if (config.config.brilhos.direito) document.getElementById('brilhoDireito').classList.add('ativo');
+                if (config.config.brilhos.centro) document.getElementById('brilhoCentro').classList.add('ativo');
+            }
+        }
+
+        // Mute toggle
+        btnMute.onclick = () => {
+            estaMutado = !estaMutado;
+            audio.muted = estaMutado;
+            iconMute.className = estaMutado ? "fa-solid fa-volume-xmark" : "fa-solid fa-volume-high";
+            if (estaMutado) btnMute.classList.add('muted');
+            else btnMute.classList.remove('muted');
+        };
+
+        // Initialize
+        init();
+    </script>
+
+</body>
+
+</html>
