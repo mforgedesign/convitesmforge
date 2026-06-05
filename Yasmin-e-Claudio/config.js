@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1780697085186.mp3",
+    "musica": "assets/music_1780697287546.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "Yasmin-e-Claudio",
@@ -21,13 +21,13 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1780697085186.png",
+    "capa": "assets/cover_1780697287546.png",
     "aberturaSlides": [
-      "assets/slide1_1780697085186.mp4"
+      "assets/slide1_1780697287546.mp4"
     ],
-    "folhaVazia": "assets/folha_1780697085186.jpg",
-    "folhaPreenchida": "assets/folha_1780697085186.jpg",
-    "musica": "assets/music_1780697085186.mp3",
+    "folhaVazia": "assets/folha_1780697287546.jpg",
+    "folhaPreenchida": "assets/folha_1780697287546.jpg",
+    "musica": "assets/music_1780697287546.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -35,7 +35,7 @@ window.config = {
     {
       "tipoAcao": "Link",
       "tipoVisual": "css",
-      "titulo": "Recepção",
+      "titulo": "Cerimônia",
       "icone": "fa-solid fa-location-dot",
       "conteudo": "https://maps.app.goo.gl/wi4Jn5Q2JSsqbvAc6"
     },
@@ -61,7 +61,7 @@ window.config = {
     {
       "tipoAcao": "Link",
       "tipoVisual": "css",
-      "titulo": "Cerimônia",
+      "titulo": "Recepção",
       "icone": "fa-solid fa-location-dot",
       "conteudo": "https://maps.app.goo.gl/p9zmpYGHj4DNDRwR6"
     }
