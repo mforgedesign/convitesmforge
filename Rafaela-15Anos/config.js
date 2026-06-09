@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "",
+    "musica": "assets/music_1781020782896.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Rafaela-15Anos",
@@ -21,16 +21,16 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781020698125.jpg",
+    "capa": "assets/cover_1781020782896.jpg",
     "aberturaSlides": [
-      "assets/slide1_1781020698125.mp4",
-      "assets/slide2_1781020698125.jpg",
-      "assets/slide3_1781020698125.mp4",
-      "assets/slide4_1781020698125.jpg"
+      "assets/slide1_1781020782896.mp4",
+      "assets/slide2_1781020782896.jpg",
+      "assets/slide3_1781020782896.mp4",
+      "assets/slide4_1781020782896.jpg"
     ],
-    "folhaVazia": "assets/folha_1781020698125.jpg",
-    "folhaPreenchida": "assets/folha_1781020698125.jpg",
-    "musica": "",
+    "folhaVazia": "assets/folha_1781020782896.jpg",
+    "folhaPreenchida": "assets/folha_1781020782896.jpg",
+    "musica": "assets/music_1781020782896.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
