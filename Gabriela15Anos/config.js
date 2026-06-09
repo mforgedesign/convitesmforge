@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1781018542864.mp3",
+    "musica": "assets/music_1781019045557.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "Gabriela15Anos",
@@ -21,13 +21,13 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781018542864.jpg",
+    "capa": "assets/cover_1781019045557.jpg",
     "aberturaSlides": [
-      "assets/slide1_1781018542864.mp4"
+      "assets/slide1_1781019045557.mp4"
     ],
-    "folhaVazia": "assets/folha_1781018542864.jpg",
-    "folhaPreenchida": "assets/folha_1781018542864.jpg",
-    "musica": "assets/music_1781018542864.mp3",
+    "folhaVazia": "assets/folha_1781019045557.jpg",
+    "folhaPreenchida": "assets/folha_1781019045557.jpg",
+    "musica": "assets/music_1781019045557.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
