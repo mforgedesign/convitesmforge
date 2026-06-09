@@ -26,9 +26,9 @@ window.config = {
     }
   ],
   "assets": {
-    "folhaPreenchida": "assets/folha_1781025165916.jpg",
+    "folhaPreenchida": "assets/folha_1781025417669.jpg",
     "musica": "",
-    "folhaVazia": "assets/folha_1781025165916.jpg"
+    "folhaVazia": "assets/folha_1781025417669.jpg"
   },
   "config": {
     "brilhos": {
