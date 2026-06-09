@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Prevent browser caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Save The Date!</title>
+
+    <!-- SEO / Open Graph -->
+    <meta property="og:title" content="Save The Date!">
+    <meta property="og:description" content="Reserve essa data especial!">
+    <meta property="og:image" content="https://clique-e-abra.mforge.com.br/Gabi-35-Anos/assets/folha_1781024709352.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Envelope Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z'/></svg>">
+
+    <!-- Config -->
+    <script src="config.js?v=1781024709352"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+            background-color: #000;
+            width: 100%;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* State Classes */
+        .invisivel {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .visivel {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Main Container */
+        #wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        #mainContainer {
+            position: relative;
+            width: 100%;
+            max-width: 480px;
+            height: 100dvh;
+            max-height: 854px;
+            background: #000;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        /* Background Image */
+        .camada {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        /* Sparkle Overlays */
+        .brilho-camada {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 15;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .brilho-camada.ativo {
+            opacity: 1;
+        }
+
+        /* Interaction Overlay */
+        #interactionOverlay {
+            position: absolute;
+            inset: 0;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.35);
+            transition: opacity 0.7s ease;
+        }
+
+        /* Text Stroke */
+        .texto-capa {
+            color: white;
+            text-shadow:
+                -1px -1px 0 #555,
+                1px -1px 0 #555,
+                -1px 1px 0 #555,
+                1px 1px 0 #555;
+        }
+
+        /* Hand Animation */
+        @keyframes clicando {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(0.9); }
+        }
+
+        .animar-clique {
+            animation: clicando 1.5s infinite ease-in-out;
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        /* Mute Button */
+        #btnMute {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            z-index: 40;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        #btnMute:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #btnMute.muted {
+            background: rgba(239, 68, 68, 0.5);
+        }
+
+        /* Loading Screen */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-left-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Music icon pulse */
+        @keyframes musicPulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(255,255,255,0.3)); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 16px rgba(255,255,255,0.6)); }
+        }
+
+        .music-icon-pulse {
+            animation: musicPulse 1.5s ease-in-out infinite;
+        }
+
+        /* Modals and Text */
+        .modal {
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* Custom Scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.4);
+        }
+
+        /* Gallery Modal */
+        .gallery-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 300;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .gallery-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-image {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+            user-select: none;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gallery-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            z-index: 310;
+            background: rgba(0,0,0,0.7);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+        .gallery-close:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.1);
+        }
+        .gallery-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 310;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s ease;
+        }
+        .gallery-arrow:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        .gallery-arrow.left { left: 8px; }
+        .gallery-arrow.right { right: 8px; }
+        @media (min-width: 600px) {
+            .gallery-arrow.left { left: -56px; }
+            .gallery-arrow.right { right: -56px; }
+            .gallery-arrow { background: rgba(0,0,0,0.7); }
+        }
+        .gallery-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+            background: rgba(0,0,0,0.5);
+            padding: 4px 12px;
+            border-radius: 12px;
+        }
+    </style>
+    <!-- Tailwind via CDN just for buttons UI compatibility -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="wrapper">
+        <div id="mainContainer">
+
+            <!-- Background Image (Folha Preenchida) - Layer 1 -->
+            <img id="fundoTelaImg" class="camada z-10 visivel" style="z-index: 10;">
+
+            <!-- Audio -->
+            <audio id="musicaFundo" loop preload="auto"></audio>
+
+            <!-- Mute Button (hidden until music starts) -->
+            <button id="btnMute" class="invisivel">
+                <i class="fa-solid fa-volume-high" id="iconMute"></i>
+            </button>
+
+            <!-- Sparkle Overlays -->
+            <img id="brilhoEsquerdo" class="brilho-camada" src="" alt="">
+            <img id="brilhoDireito" class="brilho-camada" src="" alt="">
+            <img id="brilhoCentro" class="brilho-camada" src="" alt="">
+
+            <!-- Interaction Overlay — "Clique para tocar a música!" -->
+            <div id="interactionOverlay" class="animate-pulse" onclick="startMusic()">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <span class="texto-capa" style="font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;">Clique</span>
+                    <i class="fa-solid fa-music music-icon-pulse" style="font-size: 2.5rem; color: white; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));"></i>
+                </div>
+                <h1 class="texto-capa" style="font-size: 1.5rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; margin-top: 4px;">
+                    para tocar a música!
+                </h1>
+            </div>
+
+            <!-- Gradiente e HUD de Botões -->
+            <div id="containerShadow"
+                style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 30; padding-bottom: 2.5rem; padding-top: 5rem; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); pointer-events: none; opacity: 1;">
+            </div>
+
+            <div id="containerBotoes"
+                class="absolute bottom-10 left-0 w-full z-40 px-2 flex justify-center visivel">
+                <div id="gridBotoes" class="flex flex-row flex-nowrap justify-evenly gap-1 w-full max-w-[480px]">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAIS / POPUP -->
+
+    <!-- Popup HTML Universal (Manual, RSVP, Pix, etc) -->
+    <div id="popupHtmlModal" class="modal" onclick="closeModal('popupHtmlModal')">
+        <div class="relative w-full max-w-[400px] max-h-[90vh] rounded-xl shadow-2xl overflow-hidden flex flex-col border border-white/20 bg-black/40 backdrop-blur-xl"
+            onclick="event.stopPropagation()">
+            <div class="relative z-10 flex justify-between items-center p-4 border-b border-white/10 bg-white/5">
+                <div class="flex items-center gap-3">
+                    <i id="popupHtmlIcon" class="text-white text-xl"></i>
+                    <h2 id="popupHtmlTitle" class="text-xl font-bold text-white">Informação</h2>
+                </div>
+                <button onclick="closeModal('popupHtmlModal')" class="text-white hover:text-gray-300 transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+            <div class="relative z-10 p-6 overflow-y-auto custom-scrollbar text-white flex-1 relative">
+                <div id="popupHtmlContent" class="text-sm leading-relaxed w-full">
+                    <!-- Conteúdo Injetado via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Imagem/Presentes -->
+    <div id="popupImage" class="modal" onclick="closeModal('popupImage')">
+        <div class="relative max-w-[90vw] max-h-[90vh] rounded-xl shadow-2xl overflow-hidden"
+            onclick="event.stopPropagation()">
+            <button onclick="closeModal('popupImage')"
+                class="absolute top-3 right-3 z-10 bg-black/50 text-white hover:bg-black/70 rounded-full w-10 h-10 flex items-center justify-center transition-colors border border-white/20">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <img id="popupImageImg" src="" class="max-w-full max-h-[85vh] object-contain rounded-lg">
+        </div>
+    </div>
+
+    <!-- Popup Galeria de Fotos -->
+    <div id="galleryModal" class="gallery-modal" onclick="closeGallery()">
+        <div class="gallery-container" onclick="event.stopPropagation()">
+            <button class="gallery-close" onclick="closeGallery()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="gallery-arrow left" onclick="galleryPrev()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <img id="galleryImage" class="gallery-image" src="" alt="Foto">
+            <button class="gallery-arrow right" onclick="galleryNext()">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+        </div>
+    </div>
+
+    <!-- MAIN SCRIPT -->
+    <script>
+        let config = null;
+        let estaMutado = false;
+        let musicaIniciada = false;
+
+        // References
+        const fundoTelaImg = document.getElementById('fundoTelaImg');
+        const audio = document.getElementById('musicaFundo');
+        const btnMute = document.getElementById('btnMute');
+        const iconMute = document.getElementById('iconMute');
+        const interactionOverlay = document.getElementById('interactionOverlay');
+        const containerBotoes = document.getElementById('containerBotoes');
+        const gridBotoes = document.getElementById('gridBotoes');
+
+        // iOS viewport fix
+        function setViewportHeight() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        window.addEventListener('resize', setViewportHeight);
+        setViewportHeight();
+
+        async function init() {
+            try {
+                if (typeof window.config !== 'undefined') {
+                    config = window.config;
+                    applyConfig();
+                } else {
+                    console.error("Erro: config.js não foi carregado corretamente.");
+                }
+                document.getElementById('loader').style.display = 'none';
+            } catch (err) {
+                console.error("Erro ao carregar config:", err);
+            }
+        }
+
+        function applyConfig() {
+            // Setup dynamic root variables for buttons
+            if (config.config) {
+                document.documentElement.style.setProperty('--button-color', config.config.buttonColor || '#ffffff');
+                if (config.config.buttonRadius !== undefined) {
+                    document.documentElement.style.setProperty('--radius-full', config.config.buttonRadius + 'px');
+                }
+                if (config.config.fontStyle) {
+                    document.body.style.fontFamily = `'${config.config.fontStyle}', sans-serif`;
+                }
+            }
+
+            // SEO
+            if (config.convite && config.convite.seo) {
+                document.title = config.convite.seo.pageTitle || "Save The Date";
+                document.querySelector("meta[property='og:title']").content = config.convite.seo.ogTitle || "";
+                document.querySelector("meta[property='og:description']").content = config.convite.seo.ogDescription || "";
+            }
+
+            // OG Image
+            if (config.assets && config.assets.folhaPreenchida) {
+                document.querySelector("meta[property='og:image']").content = config.assets.folhaPreenchida;
+            }
+
+            // Background Image (folha preenchida)
+            if (config.assets && config.assets.folhaPreenchida) {
+                fundoTelaImg.src = config.assets.folhaPreenchida;
+            }
+
+            // Music
+            if (config.assets && config.assets.musica) {
+                audio.src = config.assets.musica;
+                audio.load();
+            } else {
+                interactionOverlay.style.display = 'none';
+                showSparkles();
+            }
+
+            // Sparkle GIF sources
+            document.getElementById('brilhoEsquerdo').src = "assets/brilho_esquerdo_1781024709352.gif";
+            document.getElementById('brilhoDireito').src = "assets/brilho_direito_1781024709352.gif";
+            document.getElementById('brilhoCentro').src = "assets/brilho_centro_1781024709352.gif";
+
+            if (!config.assets || !config.assets.musica) {
+                showSparkles();
+            }
+
+            // Init buttons and gallery
+            if (config.botoes && config.botoes.length > 0) {
+                renderButtons(config.botoes);
+                containerBotoes.classList.remove('invisivel');
+            } else {
+                containerBotoes.classList.add('invisivel');
+            }
+
+            if (config.assets && config.assets.fotos && config.assets.fotos.length > 0) {
+                galleryPhotos = config.assets.fotos;
+            }
+        }
+
+        // ==========================================
+        // BUTTON RENDERING & SIZING
+        // ==========================================
+        function renderButtons(buttonsData) {
+            gridBotoes.innerHTML = '';
+            const btnCount = buttonsData.length;
+            const sizeMultiplier = config.config.buttonSize || 1.0;
+            const isFilled = config.config.isButtonFilled !== false;
+
+            let gridClasses = "flex flex-row justify-center items-start transition-all duration-300 gap-2";
+            if (btnCount > 4) {
+                gridClasses = "grid grid-flow-col auto-cols-fr w-full max-w-[480px] place-items-start transition-all duration-300";
+                if (btnCount === 5) gridClasses += " gap-2 scale-95 origin-bottom";
+                else gridClasses += " gap-1 scale-90 origin-bottom";
+            }
+            gridBotoes.className = gridClasses;
+
+            buttonsData.forEach((btn, index) => {
+                const anchor = document.createElement('a');
+                anchor.className = "group flex flex-col items-center gap-1 focus:outline-none w-full min-w-0 cursor-pointer";
+                anchor.id = "btn-" + index;
+
+                // Configure Action
+                if (btn.tipoAcao === 'Link') {
+                    anchor.href = btn.conteudo;
+                    anchor.target = "_blank";
+                } else if (btn.tipoAcao === 'PopupImagem') {
+                    anchor.onclick = (e) => { e.preventDefault(); openImageModal(btn.conteudo); };
+                } else if (btn.tipoAcao === 'PopupHtml') {
+                    anchor.onclick = (e) => { e.preventDefault(); openHtmlModal(btn); };
+                } else if (btn.tipoAcao === 'RSVP') {
+                    anchor.onclick = (e) => { e.preventDefault(); openRSVPModal(btn); };
+                }
+
+                // Sizing Details
+                const basePx = 48;
+                const sizePx = basePx * sizeMultiplier;
+                const baseIconRem = 1.125;
+                const iconRem = baseIconRem * sizeMultiplier;
+                const borderRadiusStyle = config.config.buttonRadius !== undefined ? `border-radius: ${config.config.buttonRadius}px;` : 'border-radius: 9999px;';
+
+                // Render Visuals
+                if (btn.tipoVisual === 'imagem' && btn.urlImagem) {
+                    // Image / SVG button (no css borders)
+                    anchor.innerHTML = `
+                        <div class="transition-transform duration-300 group-hover:scale-105 group-active:scale-95 flex items-center justify-center" style="width: ${sizePx}px; height: ${sizePx}px;">
+                            <img src="${btn.urlImagem}" alt="${btn.titulo}" class="w-full h-full object-contain filter drop-shadow-lg">
+                        </div>
+                        <span class="btn-label text-[10px] uppercase font-bold text-white tracking-wide text-center leading-tight drop-shadow-md w-full px-1" style="word-break: normal; overflow-wrap: normal; white-space: pre-wrap;">
+                            ${btn.titulo}
+                        </span>
+                    `;
+                } else {
+                    // Standard CSS button
+                    anchor.innerHTML = `
+                        <div class="border border-stone-300 p-[2px] transition-transform duration-300 group-hover:scale-105 group-active:scale-95" style="${borderRadiusStyle}">
+                            <div class="flex items-center justify-center shadow-lg transition-colors group-hover:bg-stone-700"
+                                 style="${borderRadiusStyle} width: ${sizePx}px; height: ${sizePx}px; background-color: ${isFilled ? 'var(--button-color)' : 'transparent'}; border: ${isFilled ? 'none' : '2px solid var(--button-color)'};">
+                                <i class="${btn.icone}" style="font-size: ${iconRem}rem; color: ${isFilled ? '#ffffff' : 'var(--button-color)'};"></i>
+                            </div>
+                        </div>
+                        <span class="btn-label text-[10px] uppercase font-bold text-white tracking-wide text-center leading-tight drop-shadow-md w-full px-1" style="word-break: normal; overflow-wrap: normal; white-space: pre-wrap;">
+                            ${btn.titulo}
+                        </span>
+                    `;
+                }
+                
+                gridBotoes.appendChild(anchor);
+            });
+
+            autoSizeButtonLabels();
+        }
+
+        function autoSizeButtonLabels() {
+            const labels = Array.from(gridBotoes.querySelectorAll('.btn-label'));
+            if (!labels.length) return;
+            
+            let fontSize = labels.length > 4 ? 9 : 10;
+            const minFontSize = 7.5; 
+            
+            labels.forEach(l => {
+                l.style.whiteSpace = 'normal';
+                l.style.wordWrap = 'normal';
+                l.style.lineHeight = '1.1';
+            });
+            
+            function hasOverflow() {
+                for (const label of labels) {
+                    const words = label.textContent.trim().split(/\s+/);
+                    const containerWidth = label.closest('a').clientWidth;
+                    
+                    for (const word of words) {
+                        const temp = document.createElement('span');
+                        temp.style.cssText = `font-size:${fontSize}px;font-weight:700;letter-spacing:0.025em;text-transform:uppercase;visibility:hidden;position:absolute;white-space:nowrap;font-family:'Montserrat',sans-serif;`;
+                        temp.textContent = word;
+                        document.body.appendChild(temp);
+                        const wordWidth = temp.offsetWidth;
+                        document.body.removeChild(temp);
+                        
+                        if (wordWidth > containerWidth - 4) {
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            }
+            
+            while (fontSize > minFontSize && hasOverflow()) {
+                fontSize -= 0.5;
+            }
+            
+            labels.forEach(l => l.style.fontSize = fontSize + 'px');
+            
+            if (hasOverflow()) {
+                labels.forEach(l => {
+                    l.classList.remove('tracking-wide');
+                    l.style.letterSpacing = '-0.03em';
+                });
+            }
+        }
+
+        // ==========================================
+        // MODALS & RSVP SCRIPT INJECTIONS
+        // ==========================================
+        function openHtmlModal(btn, htmlOverride) {
+            const title = btn.titulo.replace(/\\n/g, ' ');
+            const icon = btn.icone;
+            const content = htmlOverride || btn.conteudo;
+
+            document.getElementById('popupHtmlTitle').innerText = title;
+            const iconEl = document.getElementById('popupHtmlIcon');
+            if (iconEl && icon) iconEl.className = icon + " text-white text-xl";
+            
+            const contentDiv = document.getElementById('popupHtmlContent');
+            contentDiv.innerHTML = content;
+            document.getElementById('popupHtmlModal').classList.add('active');
+            
+            attachRSVPListeners();
+        }
+
+        function openImageModal(src) {
+            if (!src) return;
+            document.getElementById('popupImageImg').src = src;
+            document.getElementById('popupImage').classList.add('active');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        window.openRSVPModal = function(btn) {
+            const rsvpConfig = btn.rsvpConfig || { exibirNome: true, exibirWhatsapp: true, exibirAcompanhantes: true };
+            const whatsapp = (btn.whatsapp || "").replace(/\\D/g, '');
+
+            if (!rsvpConfig.exibirNome && !rsvpConfig.exibirWhatsapp && !rsvpConfig.exibirAcompanhantes) {
+                const msg = `Olá! Estou confirmando minha presença!`;
+                window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
+                return;
+            }
+
+            let html = `<div class="text-left"><div class="space-y-4">`;
+            
+            if (rsvpConfig.exibirNome) {
+                html += `<div><label class="block text-stone-300 text-xs font-bold mb-1 uppercase">Seu Nome Completo *</label><input type="text" id="rsvp-name" class="w-full bg-black/40 border border-stone-500/50 rounded p-2 text-white focus:border-green-500 focus:outline-none placeholder-stone-400 truncate" placeholder="Ex: Maria Silva"></div>`;
+            }
+            
+            if (rsvpConfig.exibirWhatsapp) {
+                html += `<div><label class="block text-stone-300 text-xs font-bold mb-1 uppercase">Seu WhatsApp *</label><input type="tel" id="rsvp-phone" class="w-full bg-black/40 border border-stone-500/50 rounded p-2 text-white focus:border-green-500 focus:outline-none placeholder-stone-400 truncate" placeholder="(DDD) 99999-9999"></div>`;
+            }
+            
+            if (rsvpConfig.exibirAcompanhantes) {
+                html += `
+                <div id="container-acompanhantes">
+                    <label class="block text-stone-300 text-xs font-bold mb-1 uppercase">Total de Acompanhantes</label>
+                    <div class="flex items-center gap-3">
+                        <button id="btn-dec-acomp" class="w-10 h-10 bg-stone-700/80 rounded text-white font-bold hover:bg-stone-600 transition-colors">-</button>
+                        <span id="txt-acomp-count" class="text-white font-bold text-xl w-8 text-center drop-shadow-md">0</span>
+                        <button id="btn-inc-acomp" class="w-10 h-10 bg-stone-700/80 rounded text-white font-bold hover:bg-stone-600 transition-colors">+</button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-2" id="check-container">
+                    <input type="checkbox" id="check-no-acomp" class="w-4 h-4 rounded bg-black/40 border-stone-500 text-green-500 focus:ring-green-500 focus:ring-offset-0">
+                    <label for="check-no-acomp" class="text-stone-200 text-xs cursor-pointer select-none drop-shadow">Vou sozinho(a) / Sem acompanhantes</label>
+                </div>`;
+            }
+            
+            html += `<button id="btn-submit-rsvp" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 rounded-lg transition-colors mt-2 shadow-lg flex items-center justify-center gap-2">Confirmar no WhatsApp <i class="fa-solid fa-paper-plane"></i></button></div></div>`;
+            
+            openHtmlModal(btn, html);
+            
+            setTimeout(() => {
+                attachRSVPListeners();
+                document.getElementById('btn-submit-rsvp').onclick = () => {
+                    sendRSVP(whatsapp, rsvpConfig);
+                };
+            }, 50);
+        };
+
+        window.sendRSVP = function(number, rsvpConfig) {
+            const currentRSVPNumber = number; 
+            const txtName = document.getElementById('rsvp-name');
+            const txtPhone = document.getElementById('rsvp-phone');
+            
+            let name = txtName ? txtName.value.trim() : "";
+            let phone = txtPhone ? txtPhone.value.trim() : "";
+            
+            if (rsvpConfig.exibirNome && !name) return alert("Por favor, preencha seu nome.");
+            if (rsvpConfig.exibirWhatsapp && !phone) return alert("Por favor, preencha seu WhatsApp.");
+
+            let msg = `Olá! Gostaria de confirmar minha presença!\n`;
+            if (name) msg += `\n*Nome:* ${name}`;
+            if (phone) msg += `\n*Telefone:* ${phone}`;
+
+            if (rsvpConfig.exibirAcompanhantes) {
+                const checkNoAcomp = document.getElementById('check-no-acomp');
+                const acompCountTxt = document.getElementById('txt-acomp-count');
+                const acompCount = acompCountTxt ? parseInt(acompCountTxt.innerText) : 0;
+                
+                if (checkNoAcomp && checkNoAcomp.checked) {
+                    msg += `\n*Acompanhantes:* Nenhum (Vou sozinho)`;
+                } else {
+                    msg += `\n*Acompanhantes:* ${acompCount > 0 ? acompCount : 'Nenhum'}`;
+                }
+            }
+
+            window.open(`https://wa.me/${currentRSVPNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+            closeModal('popupHtmlModal');
+        };
+
+        function attachRSVPListeners() {
+            const btnDec = document.getElementById('btn-dec-acomp');
+            const btnInc = document.getElementById('btn-inc-acomp');
+            const checkNoAcomp = document.getElementById('check-no-acomp');
+            const txtAcompCount = document.getElementById('txt-acomp-count');
+            const containerAcomp = document.getElementById('container-acompanhantes');
+
+            if(btnDec && btnInc && txtAcompCount) {
+                btnDec.onclick = () => {
+                    let c = parseInt(txtAcompCount.innerText);
+                    if (c > 0) { c--; txtAcompCount.innerText = c; }
+                };
+                btnInc.onclick = () => {
+                    let c = parseInt(txtAcompCount.innerText);
+                    c++; txtAcompCount.innerText = c;
+                };
+            }
+
+            if(checkNoAcomp && containerAcomp) {
+                checkNoAcomp.onchange = (e) => {
+                    if (e.target.checked) {
+                        containerAcomp.classList.add('hidden');
+                        if(txtAcompCount) txtAcompCount.innerText = "0";
+                    } else {
+                        containerAcomp.classList.remove('hidden');
+                    }
+                };
+            }
+        }
+
+        // ==========================================
+        // PHOTO GALLERY
+        // ==========================================
+        let galleryPhotos = [];
+        let galleryIndex = 0;
+
+        function openGallery() {
+            if (!galleryPhotos || !galleryPhotos.length) return;
+            galleryIndex = 0;
+            updateGalleryImage();
+            document.getElementById('galleryModal').classList.add('active');
+        }
+
+        function closeGallery() {
+            document.getElementById('galleryModal').classList.remove('active');
+        }
+
+        function galleryNext() {
+            if (!galleryPhotos || !galleryPhotos.length) return;
+            galleryIndex = (galleryIndex + 1) % galleryPhotos.length;
+            updateGalleryImage();
+        }
+
+        function galleryPrev() {
+            if (!galleryPhotos || !galleryPhotos.length) return;
+            galleryIndex = (galleryIndex - 1 + galleryPhotos.length) % galleryPhotos.length;
+            updateGalleryImage();
+        }
+
+        function updateGalleryImage() {
+            const img = document.getElementById('galleryImage');
+            const counter = document.getElementById('galleryCounter');
+            
+            img.style.opacity = '0';
+            img.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                img.src = galleryPhotos[galleryIndex];
+                counter.textContent = `${galleryIndex + 1} / ${galleryPhotos.length}`;
+                
+                img.onload = () => {
+                    img.style.opacity = '1';
+                    img.style.transform = 'scale(1)';
+                };
+            }, 300);
+        }
+
+        function startMusic() {
+            if (musicaIniciada) return;
+            musicaIniciada = true;
+
+            // Fade out interaction overlay
+            interactionOverlay.style.opacity = '0';
+            interactionOverlay.style.pointerEvents = 'none';
+            setTimeout(() => { interactionOverlay.style.display = 'none'; }, 700);
+
+            // Play music
+            if (audio && config.assets && config.assets.musica) {
+                audio.volume = 0.5;
+                audio.play().catch(e => {
+                    setTimeout(() => audio.play(), 500);
+                });
+            }
+
+            // Show mute button
+            btnMute.classList.remove('invisivel');
+
+            // Show sparkles
+            showSparkles();
+        }
+
+        function showSparkles() {
+            if (config.config && config.config.brilhos) {
+                if (config.config.brilhos.esquerdo) document.getElementById('brilhoEsquerdo').classList.add('ativo');
+                if (config.config.brilhos.direito) document.getElementById('brilhoDireito').classList.add('ativo');
+                if (config.config.brilhos.centro) document.getElementById('brilhoCentro').classList.add('ativo');
+            }
+        }
+
+        // Mute toggle
+        btnMute.onclick = () => {
+            estaMutado = !estaMutado;
+            audio.muted = estaMutado;
+            iconMute.className = estaMutado ? "fa-solid fa-volume-xmark" : "fa-solid fa-volume-high";
+            if (estaMutado) btnMute.classList.add('muted');
+            else btnMute.classList.remove('muted');
+        };
+
+        // Initialize
+        init();
+    </script>
+
+</body>
+
+</html>
