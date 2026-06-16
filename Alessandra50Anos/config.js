@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1781642866073.mp3",
+    "musica": "assets/music_1781642906779.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Alessandra50Anos",
@@ -21,17 +21,17 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781642866073.png",
+    "capa": "assets/cover_1781642906779.png",
     "aberturaSlides": [
-      "assets/slide1_1781642866073.mp4",
-      "assets/slide2_1781642866073.mp4",
-      "assets/slide3_1781642866073.mp4",
-      "assets/slide4_1781642866073.mp4",
-      "assets/slide5_1781642866073.mp4"
+      "assets/slide1_1781642906779.mp4",
+      "assets/slide2_1781642906779.mp4",
+      "assets/slide3_1781642906779.mp4",
+      "assets/slide4_1781642906779.mp4",
+      "assets/slide5_1781642906779.mp4"
     ],
-    "folhaVazia": "assets/folha_1781642866073.jpg",
-    "folhaPreenchida": "assets/folha_1781642866073.jpg",
-    "musica": "assets/music_1781642866073.mp3",
+    "folhaVazia": "assets/folha_1781642906779.jpg",
+    "folhaPreenchida": "assets/folha_1781642906779.jpg",
+    "musica": "assets/music_1781642906779.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -41,7 +41,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Como Chegar",
       "icone": "fa-solid fa-location-dot",
-      "conteudo": "https://maps.app.goo.gl/apshuicUt4GEB1UW7"
+      "conteudo": "https://maps.app.goo.gl/P425bRZppknh3rS7A"
     },
     {
       "tipoAcao": "PopupHtml",
