@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1781644397738.mp3",
+    "musica": "assets/music_1781646269275.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Maria-Vitoria-15Anos",
@@ -21,13 +21,13 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781644397738.jpg",
+    "capa": "assets/cover_1781646269275.jpg",
     "aberturaSlides": [
-      "assets/slide1_1781644397738.mp4"
+      "assets/slide1_1781646269275.mp4"
     ],
-    "folhaVazia": "assets/folha_1781644397738.jpg",
-    "folhaPreenchida": "assets/folha_1781644397738.jpg",
-    "musica": "assets/music_1781644397738.mp3",
+    "folhaVazia": "assets/folha_1781646269275.jpg",
+    "folhaPreenchida": "assets/folha_1781646269275.jpg",
+    "musica": "assets/music_1781646269275.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -73,7 +73,7 @@ window.config = {
   },
   "config": {
     "exibirMarcaDagua": false,
-    "cronometro": false,
+    "cronometro": true,
     "buttonColor": "#8c2c49",
     "buttonSize": 1,
     "isButtonFilled": true,
