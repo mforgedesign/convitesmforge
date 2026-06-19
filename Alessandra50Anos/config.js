@@ -10,7 +10,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1781892245711.mp3",
+    "musica": "assets/music_1781892485583.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Alessandra50Anos",
@@ -21,17 +21,17 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781892245711.png",
+    "capa": "assets/cover_1781892485583.png",
     "aberturaSlides": [
-      "assets/slide1_1781892245711.mp4",
-      "assets/slide2_1781892245711.mp4",
-      "assets/slide3_1781892245711.mp4",
-      "assets/slide4_1781892245711.jpg",
-      "assets/slide5_1781892245711.mp4"
+      "assets/slide1_1781892485583.mp4",
+      "assets/slide2_1781892485583.mp4",
+      "assets/slide3_1781892485583.mp4",
+      "assets/slide4_1781892485583.mp4",
+      "assets/slide5_1781892485583.mp4"
     ],
-    "folhaVazia": "assets/folha_1781892245711.jpg",
-    "folhaPreenchida": "assets/folha_1781892245711.jpg",
-    "musica": "assets/music_1781892245711.mp3",
+    "folhaVazia": "assets/folha_1781892485583.jpg",
+    "folhaPreenchida": "assets/folha_1781892485583.jpg",
+    "musica": "assets/music_1781892485583.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
