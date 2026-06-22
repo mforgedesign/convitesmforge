@@ -14,8 +14,8 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1782148559890.mp3",
-    "tipoAbertura": "longa",
+    "musica": "assets/music_1782152154536.mp3",
+    "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "CarlosAlberto80Anos",
     "seo": {
@@ -25,20 +25,20 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782148559890.png",
+    "capa": "assets/cover_1782152154536.png",
     "aberturaSlides": [
-      "assets/slide1_1782148559890.mp4"
+      "assets/slide1_1782152154536.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782148559890.mp4",
+        "filePath": "assets/slide1_1782152154536.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha.png",
+    "folhaVazia": "assets/folha_vazia_1782152154536.png",
     "folhaPreenchida": "assets/folha.png",
-    "musica": "assets/music_1782148559890.mp3",
+    "musica": "assets/music_1782152154536.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
