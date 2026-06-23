@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa com Branco, Verde claro e Dourado",
     "tema": "Jardim encantado",
-    "musica": "assets/music_1782234743452.mp3",
+    "musica": "assets/music_1782235046727.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Ester-15Anos",
@@ -25,38 +25,38 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782234743452.jpg",
+    "capa": "assets/cover_1782235046727.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782234743452.mp4",
-      "assets/slide2_1782234743452.jpg",
-      "assets/slide3_1782234743452.mp4",
-      "assets/slide4_1782234743452.jpg"
+      "assets/slide1_1782235046727.mp4",
+      "assets/slide2_1782235046727.jpg",
+      "assets/slide3_1782235046727.mp4",
+      "assets/slide4_1782235046727.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_abertura.mp4",
+        "filePath": "assets/slide1_1782235046727.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_convite_especial.jpg",
+        "filePath": "assets/slide2_1782235046727.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/generated_video_4.mp4",
+        "filePath": "assets/slide3_1782235046727.mp4",
         "label": "Slide 3",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_prepare.jpg",
+        "filePath": "assets/slide4_1782235046727.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782234743452.jpg",
-    "folhaPreenchida": "assets/folha_1782234743452.jpg",
-    "musica": "assets/music_1782234743452.mp3",
+    "folhaVazia": "assets/folha_vazia_1782235046727.jpg",
+    "folhaPreenchida": "assets/folha_1782235046727.jpg",
+    "musica": "assets/music_1782235046727.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -69,16 +69,11 @@ window.config = {
       "conteudo": "https://maps.app.goo.gl/florenza-santana-do-paraiso-mg"
     },
     {
-      "tipoAcao": "RSVP",
+      "tipoAcao": "Link",
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "whatsapp": "55XXXXXXXXXXX",
-      "rsvpConfig": {
-        "exibirNome": true,
-        "exibirWhatsapp": false,
-        "exibirAcompanhantes": false
-      }
+      "conteudo": "https://docs.google.com/forms/d/e/1FAIpQLSfE8CSbPjA68InxsTIDlgg-nhR0VPsr9sLUz4kAsMbU_va3kg/viewform?usp=publish-editor"
     },
     {
       "tipoAcao": "PopupHtml",
