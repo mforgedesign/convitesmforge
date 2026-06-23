@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa com Branco, Verde claro e Dourado",
     "tema": "Jardim encantado",
-    "musica": "assets/music_1782234474960.mp3",
+    "musica": "assets/music_1782234743452.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Ester-15Anos",
@@ -25,13 +25,12 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782234474960.jpg",
+    "capa": "assets/cover_1782234743452.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782234474960.mp4",
-      "assets/slide2_1782234474960.jpg",
-      "assets/slide3_1782234474960.mp4",
-      "assets/slide4_1782234474960.jpg",
-      ""
+      "assets/slide1_1782234743452.mp4",
+      "assets/slide2_1782234743452.jpg",
+      "assets/slide3_1782234743452.mp4",
+      "assets/slide4_1782234743452.jpg"
     ],
     "aberturaSlidesMeta": [
       {
@@ -53,16 +52,11 @@ window.config = {
         "filePath": "assets/slide4_prepare.jpg",
         "label": "Prepare-se",
         "type": "image"
-      },
-      {
-        "filePath": "",
-        "label": "Slide 5",
-        "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782234474960.jpg",
-    "folhaPreenchida": "assets/folha_1782234474960.jpg",
-    "musica": "assets/music_1782234474960.mp3",
+    "folhaVazia": "assets/folha_vazia_1782234743452.jpg",
+    "folhaPreenchida": "assets/folha_1782234743452.jpg",
+    "musica": "assets/music_1782234743452.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
