@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa com Branco, Verde claro e Dourado",
     "tema": "Jardim encantado",
-    "musica": "assets/music_1782233958617.mp3",
+    "musica": "assets/music_1782234468504.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Ester-15Anos",
@@ -25,12 +25,12 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_gen.jpg",
+    "capa": "assets/cover_1782234468504.jpg",
     "aberturaSlides": [
-      "assets/slide1_abertura.mp4",
-      "assets/slide2_convite_especial.jpg",
-      "assets/generated_video_4.mp4",
-      "assets/slide4_prepare.jpg",
+      "assets/slide1_1782234468504.mp4",
+      "assets/slide2_1782234468504.jpg",
+      "assets/slide3_1782234468504.mp4",
+      "assets/slide4_1782234468504.jpg",
       ""
     ],
     "aberturaSlidesMeta": [
@@ -60,9 +60,9 @@ window.config = {
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/lauany_jardim_encanto_15_anos_convite_debutante_1.jpg",
-    "folhaPreenchida": "assets/folha_preenchida_gen.jpg",
-    "musica": "assets/music_1782233958617.mp3",
+    "folhaVazia": "assets/folha_vazia_1782234468504.jpg",
+    "folhaPreenchida": "assets/folha_1782234468504.jpg",
+    "musica": "assets/music_1782234468504.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
