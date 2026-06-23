@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Marsala",
     "tema": "Floral",
-    "musica": "",
+    "musica": "assets/music_1782247764153.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Gabriella15Anos",
@@ -25,39 +25,39 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782247690962.jpg",
-    "cartao": "",
+    "capa": "assets/cover_1782247764153.jpg",
+    "cartao": "assets/cartao_gen_1782247764153.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782247690962.mp4",
-      "assets/slide2_1782247690962.jpg",
-      "assets/slide3_1782247690962.mp4",
-      "assets/slide4_1782247690962.jpg"
+      "assets/slide1_1782247764153.mp4",
+      "assets/slide2_1782247764153.jpg",
+      "assets/slide3_1782247764153.mp4",
+      "assets/slide4_1782247764153.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782247690962.mp4",
+        "filePath": "assets/slide1_1782247764153.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1782247690962.jpg",
+        "filePath": "assets/slide2_1782247764153.jpg",
         "label": "Slide 2",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1782247690962.mp4",
+        "filePath": "assets/slide3_1782247764153.mp4",
         "label": "Slide 3",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1782247690962.jpg",
+        "filePath": "assets/slide4_1782247764153.jpg",
         "label": "Slide 4",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782247690962.jpg",
-    "folhaPreenchida": "assets/folha_1782247690962.jpg",
-    "musica": "",
+    "folhaVazia": "assets/folha_vazia_1782247764153.jpg",
+    "folhaPreenchida": "assets/folha_1782247764153.jpg",
+    "musica": "assets/music_1782247764153.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
