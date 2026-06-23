@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1782153232002.mp3",
+    "musica": "assets/music_1782248271468.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "CarlosAlberto80Anos",
@@ -25,20 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782153232002.png",
+    "capa": "assets/cover_1782248271468.png",
+    "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1782153232002.mp4"
+      "assets/slide1_1782248271468.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782153232002.mp4",
+        "filePath": "assets/slide1_1782248271468.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782153232002.png",
-    "folhaPreenchida": "assets/folha_1782153232002.png",
-    "musica": "assets/music_1782153232002.mp3",
+    "folhaVazia": "assets/folha_vazia_1782248271468.png",
+    "folhaPreenchida": "assets/folha_1782248271468.png",
+    "musica": "assets/music_1782248271468.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -78,7 +79,7 @@ window.config = {
     "lembrete": false
   },
   "config": {
-    "exibirMarcaDagua": true,
+    "exibirMarcaDagua": false,
     "cronometro": true,
     "buttonColor": "#0c2b71",
     "buttonSize": 1,
