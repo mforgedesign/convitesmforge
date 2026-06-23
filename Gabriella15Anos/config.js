@@ -2,19 +2,19 @@ window.config = {
   "evento": {
     "tipo": "Aniversário",
     "nome": "Gabriella",
-    "idade": 0,
+    "idade": 15,
     "data": "2027-02-20",
     "hora": "20:30",
     "horaTermino": "01:30",
     "endereco": "Espaço imperial, SHVP rua12 chacara146/1 lote33, Taguatinga",
-    "frase1": "",
+    "frase1": "Você está convidado para celebrar",
     "frase2": "",
     "frase3": ""
   },
   "convite": {
     "paletaCores": "Marsala",
     "tema": "Floral",
-    "musica": "assets/music_1782248008599.mp3",
+    "musica": "assets/music_1782250407902.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Gabriella15Anos",
@@ -25,22 +25,22 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782248008599.jpg",
-    "cartao": "assets/cartao_gen_1782248008599.jpg",
+    "capa": "assets/cover_1782250407902.jpg",
+    "cartao": "assets/cartao_gen_1782250407902.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782248008599.mp4",
-      "assets/slide2_1782248008599.jpg",
-      "assets/slide3_1782248008599.mp4",
-      "assets/slide4_1782248008599.jpg"
+      "assets/slide1_1782250407902.mp4",
+      "assets/slide2_1782250407902.jpg",
+      "assets/slide3_1782250407902.mp4",
+      "assets/slide4_1782250407902.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782248008599.mp4",
+        "filePath": "assets/slide1_1782250407902.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1782248008599.jpg",
+        "filePath": "assets/slide2_1782250407902.jpg",
         "label": "Slide 2",
         "type": "video"
       },
@@ -50,14 +50,14 @@ window.config = {
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1782248008599.jpg",
+        "filePath": "assets/slide4_1782250407902.jpg",
         "label": "Slide 4",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782248008599.jpg",
-    "folhaPreenchida": "assets/folha_1782248008599.jpg",
-    "musica": "assets/music_1782248008599.mp3",
+    "folhaVazia": "assets/folha_vazia_1782250407902.jpg",
+    "folhaPreenchida": "assets/folha_1782250407902.jpg",
+    "musica": "assets/music_1782250407902.mp3",
     "fotos": [],
     "popupImagensPorBotao": {}
   },
