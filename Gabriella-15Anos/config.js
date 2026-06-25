@@ -25,13 +25,13 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_gen.jpg",
-    "cartao": "assets/cartao_gen_1782416367870.jpg",
+    "capa": "assets/cover_1782416492570.jpg",
+    "cartao": "assets/cartao_gen_1782416492570.jpg",
     "aberturaSlides": [
-      "assets/slide1_abertura.mp4",
-      "assets/slide2_convite_especial.jpg",
+      "assets/slide1_1782416492570.mp4",
+      "assets/slide2_1782416492570.jpg",
       "",
-      "assets/slide4_prepare.jpg"
+      "assets/slide4_1782416492570.jpg"
     ],
     "aberturaSlidesMeta": [
       {
@@ -55,8 +55,8 @@ window.config = {
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_gen.jpg",
-    "folhaPreenchida": "assets/folha_preenchida_gen.jpg",
+    "folhaVazia": "assets/folha_vazia_1782416492570.jpg",
+    "folhaPreenchida": "assets/folha_1782416492570.jpg",
     "musica": "",
     "fabric": {
       "saveTheDate": {
