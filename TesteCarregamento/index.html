@@ -22,7 +22,7 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z'/></svg>">
 
     <!-- CSS / Libraries / Config -->
-    <script src="config.js?v=1782474148667"></script>
+    <script src="config.js?v=1782474415036"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -481,7 +481,7 @@
             </div>
 
             <!-- Click to interact (hidden until preload finishes) -->
-            <div id="dicaInteractionContainer" class="absolute z-10 flex flex-col items-center gap-1 animate-pulse" style="opacity: 0; pointer-events: none; transition: opacity 0.6s ease;">
+            <div id="dicaInteractionContainer" class="absolute z-10 flex flex-col items-center gap-1 animate-pulse" style="display: none; opacity: 0; pointer-events: none; transition: opacity 0.6s ease;">
                 <div class="flex items-center gap-3">
                     <span class="texto-capa text-2xl font-bold uppercase tracking-widest">Clique</span>
                     <i class="fa-solid fa-hand-pointer text-4xl text-white drop-shadow-lg animar-clique"></i>
@@ -882,6 +882,24 @@
             }
         }
 
+        function revealInteractionAfterPreload(preloaderUI, dicaContainer) {
+            if (preloaderUI) {
+                preloaderUI.style.opacity = '0';
+            }
+
+            setTimeout(() => {
+                if (preloaderUI) {
+                    preloaderUI.style.display = 'none';
+                }
+                if (!dicaContainer) return;
+                dicaContainer.style.display = 'flex';
+                requestAnimationFrame(() => {
+                    dicaContainer.style.opacity = '1';
+                    dicaContainer.style.pointerEvents = 'auto';
+                });
+            }, 650);
+        }
+
         function preloadImageAsset(url) {
             return new Promise((resolve, reject) => {
                 const img = new Image();
@@ -934,9 +952,7 @@
 
             if (assetsToLoad.length === 0) {
                 openingAssetsReady = true;
-                preloaderUI.style.display = 'none';
-                dicaContainer.style.opacity = '1';
-                dicaContainer.style.pointerEvents = 'auto';
+                revealInteractionAfterPreload(preloaderUI, dicaContainer);
                 return;
             }
 
@@ -956,12 +972,7 @@
                 if (loaded >= total) {
                     clearTimeout(slowTimer);
                     openingAssetsReady = true;
-                    preloaderUI.style.opacity = '0';
-                    setTimeout(() => {
-                        preloaderUI.style.display = 'none';
-                        dicaContainer.style.opacity = '1';
-                        dicaContainer.style.pointerEvents = 'auto';
-                    }, 500);
+                    revealInteractionAfterPreload(preloaderUI, dicaContainer);
                 }
             }
 
