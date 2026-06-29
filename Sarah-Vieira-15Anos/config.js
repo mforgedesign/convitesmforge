@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul com Branco e Prata",
     "tema": "Floral",
-    "musica": "assets/music_1782752800531.mp3",
+    "musica": "assets/music_1782752873685.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Sarah-Vieira-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782752800531.jpg",
+    "capa": "assets/cover_1782752873685.jpg",
     "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1782752800531.mp4"
+      "assets/slide1_1782752873685.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782752800531.mp4",
+        "filePath": "assets/slide1_1782752873685.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782752800531.jpg",
-    "folhaPreenchida": "assets/folha_1782752800531.png",
-    "musica": "assets/music_1782752800531.mp3",
+    "folhaVazia": "assets/folha_vazia_1782752873685.jpg",
+    "folhaPreenchida": "assets/folha_1782752873685.png",
+    "musica": "assets/music_1782752873685.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
