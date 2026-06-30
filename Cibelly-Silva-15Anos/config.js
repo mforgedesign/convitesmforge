@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul escuro com Amarelo",
     "tema": "Van Gogh",
-    "musica": "assets/music_1782841667499.mp3",
+    "musica": "assets/music_1782842695503.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "Cibelly-Silva-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782841667499.jpg",
-    "cartao": "assets/cartao_gen_1782841667499.jpg",
+    "capa": "assets/cover_1782842695503.jpg",
+    "cartao": "assets/cartao_gen_1782842695503.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782841667499.mp4"
+      "assets/slide1_1782842695503.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782841667499.mp4",
+        "filePath": "assets/slide1_1782842695503.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782841667499.jpg",
-    "folhaPreenchida": "assets/folha_1782841667499.jpg",
-    "musica": "assets/music_1782841667499.mp3",
+    "folhaVazia": "assets/folha_vazia_1782842695503.jpg",
+    "folhaPreenchida": "assets/folha_1782842695503.jpg",
+    "musica": "assets/music_1782842695503.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -82,7 +82,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "whatsapp": "5511988509403",
+      "whatsapp": "559294515067",
       "rsvpConfig": {
         "exibirNome": true,
         "exibirWhatsapp": false,
