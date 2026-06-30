@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul escuro com Amarelo",
     "tema": "Van Gogh",
-    "musica": "assets/music_1782840445693.mp3",
+    "musica": "assets/music_1782840995885.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "Cibelly-Silva-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782840445693.jpg",
-    "cartao": "assets/cartao_gen_1782840445693.jpg",
+    "capa": "assets/cover_1782840995885.jpg",
+    "cartao": "assets/cartao_gen_1782840995885.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782840445693.mp4"
+      "assets/slide1_1782840995885.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782840445693.mp4",
+        "filePath": "assets/slide1_1782840995885.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782840445693.jpg",
-    "folhaPreenchida": "assets/folha_1782840445693.jpg",
-    "musica": "assets/music_1782840445693.mp3",
+    "folhaVazia": "assets/folha_vazia_1782840995885.jpg",
+    "folhaPreenchida": "assets/folha_1782840995885.jpg",
+    "musica": "assets/music_1782840995885.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
