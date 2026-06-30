@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul escuro com Amarelo",
     "tema": "Van Gogh",
-    "musica": "assets/music_1782840995885.mp3",
+    "musica": "assets/music_1782841667499.mp3",
     "tipoAbertura": "curta",
     "particulasAbertura": true,
     "slug": "Cibelly-Silva-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782840995885.jpg",
-    "cartao": "assets/cartao_gen_1782840995885.jpg",
+    "capa": "assets/cover_1782841667499.jpg",
+    "cartao": "assets/cartao_gen_1782841667499.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782840995885.mp4"
+      "assets/slide1_1782841667499.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782840995885.mp4",
+        "filePath": "assets/slide1_1782841667499.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782840995885.jpg",
-    "folhaPreenchida": "assets/folha_1782840995885.jpg",
-    "musica": "assets/music_1782840995885.mp3",
+    "folhaVazia": "assets/folha_vazia_1782841667499.jpg",
+    "folhaPreenchida": "assets/folha_1782841667499.jpg",
+    "musica": "assets/music_1782841667499.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -66,7 +66,7 @@ window.config = {
     {
       "tipoAcao": "PopupHtml",
       "tipoVisual": "css",
-      "titulo": "Dicas de Presente",
+      "titulo": "Dica de Presente",
       "icone": "fa-solid fa-gift",
       "conteudo": "<div class=\"text-left\">\n  <div class=\"bg-black/40 p-4 rounded-xl border border-white/20 mb-4 text-center relative overflow-hidden\">\n    <div class=\"absolute inset-0 bg-white/5 animate-pulse\"></div>\n    <p class=\"text-[10px] text-stone-300 mb-1 uppercase tracking-widest relative z-10\">Chave PIX (Telefone)</p>\n    <p class=\"font-bold text-xl text-white select-all tracking-wider relative z-10\">11988509403</p>\n  </div>\n  <button onclick=\"navigator.clipboard.writeText('11988509403'); alert('Chave Pix copiada!');\" class=\"w-full bg-gradient-to-r from-[var(--button-color)] to-blue-800 hover:brightness-110 text-white font-bold py-3.5 rounded-xl transition-all shadow-[0_0_15px_rgba(12,43,113,0.4)] flex items-center justify-center gap-2 uppercase text-xs tracking-widest relative overflow-hidden group\">\n    <span class=\"relative z-10 flex items-center gap-2\">Copiar Chave Pix <i class=\"fa-regular fa-copy group-hover:scale-110 transition-transform\"></i></span>\n    <div class=\"absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300\"></div>\n  </button>\n</div>"
     },
