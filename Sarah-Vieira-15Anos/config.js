@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul com Branco e Prata",
     "tema": "Floral",
-    "musica": "assets/music_1782755211583.mp3",
+    "musica": "assets/music_1782840069223.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Sarah-Vieira-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782755211583.jpg",
-    "cartao": "assets/cartao_gen_1782755211583.jpg",
+    "capa": "assets/cover_1782840069223.jpg",
+    "cartao": "assets/cartao_gen_1782840069223.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782755211583.mp4"
+      "assets/slide1_1782840069223.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782755211583.mp4",
+        "filePath": "assets/slide1_1782840069223.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782755211583.jpg",
-    "folhaPreenchida": "assets/folha_1782755211583.png",
-    "musica": "assets/music_1782755211583.mp3",
+    "folhaVazia": "assets/folha_vazia_1782840069223.jpg",
+    "folhaPreenchida": "assets/folha_1782840069223.png",
+    "musica": "assets/music_1782840069223.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -71,18 +71,18 @@ window.config = {
       "conteudo": "<div class=\"space-y-3\"><div class=\"flex gap-4 items-center bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group\"><div class=\"w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:bg-white/20 transition-colors\"><i class=\"fa-regular fa-clock text-white text-xl\"></i></div><div><h3 class=\"font-bold text-white text-sm mb-0.5 tracking-wide\">A Pontualidade é um Carinho</h3><p class=\"text-xs text-stone-300 leading-relaxed\">Chegue no horário combinado para não perder nenhum detalhe da nossa mágica história.</p></div></div><div class=\"flex gap-4 items-center bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group\"><div class=\"w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:bg-white/20 transition-colors\"><i class=\"fa-regular fa-calendar-check text-white text-xl\"></i></div><div><h3 class=\"font-bold text-white text-sm mb-0.5 tracking-wide\">Confirmação de Presença</h3><p class=\"text-xs text-stone-300 leading-relaxed\">Confirme sua vinda até 15 dias antes, para que possamos preparar tudo com muito amor.</p></div></div><div class=\"flex gap-4 items-center bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group\"><div class=\"w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:bg-white/20 transition-colors\"><i class=\"fa-solid fa-heart text-white text-xl animate-pulse\"></i></div><div><h3 class=\"font-bold text-white text-sm mb-0.5 tracking-wide\">Celebre Conosco</h3><p class=\"text-xs text-stone-300 leading-relaxed\">Deixe a alegria guiar a sua noite! Estamos ansiosos para criar memórias inesquecíveis.</p></div></div><div class=\"flex gap-4 items-center bg-white/5 p-4 rounded-xl border border-white/10 hover:bg-white/10 transition-colors group\"><div class=\"w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0 border border-white/20 shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:bg-white/20 transition-colors\"><i class=\"fa-solid fa-cake-candles text-white text-xl\"></i></div><div><h3 class=\"font-bold text-white text-sm mb-0.5 tracking-wide\">Um Doce Encontro</h3><p class=\"text-xs text-stone-300 leading-relaxed\">Não se despeça sem nos presentear com um abraço e saborear uma fatia do nosso bolo.</p></div></div></div>"
     },
     {
-      "tipoAcao": "PopupHtml",
+      "tipoAcao": "Link",
       "tipoVisual": "css",
       "titulo": "Lista de Presentes",
       "icone": "fa-solid fa-gift",
-      "conteudo": "Aguardando Link"
+      "conteudo": "https://sarah-minhafestade-15.com.br/"
     },
     {
-      "tipoAcao": "PopupHtml",
+      "tipoAcao": "Link",
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "conteudo": "Aguardando Link"
+      "conteudo": "https://www.sarah-minhafestade-15.com.br/confirmacao-de-presenca"
     }
   ],
   "upsell": {
