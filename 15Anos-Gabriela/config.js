@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Lilás",
     "tema": "Elegante",
-    "musica": "assets/music_1783015913657.mp3",
+    "musica": "assets/music_1783129314877.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "15Anos-Gabriela",
@@ -25,43 +25,43 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783015913657.png",
-    "cartao": "assets/5b42011fccb90598a8147164a4490c33_1_1783015447_3876_1783015913657.png",
+    "capa": "assets/cover_1783129314877.png",
+    "cartao": "assets/5b42011fccb90598a8147164a4490c33_1_1783015447_3876_1783129314877.png",
     "aberturaSlides": [
-      "assets/slide1_1783015913657.mp4",
-      "assets/slide2_1783015913657.jpg",
-      "assets/slide3_1783015913657.mp4",
-      "assets/slide4_1783015913657.mp4"
+      "assets/slide1_1783129314877.mp4",
+      "assets/slide2_1783129314877.jpg",
+      "assets/slide3_1783129314877.mp4",
+      "assets/slide4_1783129314877.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783015913657.mp4",
+        "filePath": "assets/slide1_1783129314877.mp4",
         "label": "Erro",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783015913657.jpg",
+        "filePath": "assets/slide2_1783129314877.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783015913657.mp4",
+        "filePath": "assets/slide3_1783129314877.mp4",
         "label": "Slide 3",
         "type": "image"
       },
       {
-        "filePath": "assets/slide4_1783015913657.mp4",
+        "filePath": "assets/slide4_1783129314877.mp4",
         "label": "Erro",
         "type": "image"
       }
     ],
     "folhaVazia": "",
-    "folhaPreenchida": "assets/folha_1783015913657.png",
-    "musica": "assets/music_1783015913657.mp3",
+    "folhaPreenchida": "assets/folha_1783129314877.png",
+    "musica": "assets/music_1783129314877.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "",
-        "resultado": "",
+        "referencia": "assets/chatgpt_image_3_de_jul_de_2026_22_40_52_1783129314877.png",
+        "resultado": "assets/save_the_date_1783125654203_1783129314877.mp4",
         "musicStartSec": 0
       },
       "lembrete": {
