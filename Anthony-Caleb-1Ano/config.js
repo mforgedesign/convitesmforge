@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "❤️ Vermelho ferrari. 🔵 Azul petróleo. 💛 Amarelo mostarda. 🤍 Off-white (creme). 🩶 Cinza claro. 🤎 Bege areia. 🌿 Verde sálvia (para um toque delicado).",
     "tema": "Carros",
-    "musica": "assets/music_1783124190923.mp3",
+    "musica": "assets/music_1783128707415.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Anthony-Caleb-1Ano",
@@ -25,27 +25,27 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783124190923.png",
+    "capa": "assets/cover_1783128707415.png",
     "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1783124190923.mp4",
-      "assets/slide2_1783124190923.mp4"
+      "assets/slide1_1783128707415.mp4",
+      "assets/slide2_1783128707415.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783124190923.mp4",
+        "filePath": "assets/slide1_1783128707415.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783124190923.mp4",
+        "filePath": "assets/slide2_1783128707415.mp4",
         "label": "Slide 2",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783124190923.jpg",
-    "folhaPreenchida": "assets/folha_1783124190923.png",
-    "musica": "assets/music_1783124190923.mp3",
+    "folhaVazia": "assets/folha_vazia_1783128707415.jpg",
+    "folhaPreenchida": "assets/folha_1783128707415.jpg",
+    "musica": "assets/music_1783128707415.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
