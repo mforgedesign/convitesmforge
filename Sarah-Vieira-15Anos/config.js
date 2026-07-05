@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul com Branco e Prata",
     "tema": "Floral",
-    "musica": "assets/music_1782840069223.mp3",
+    "musica": "assets/music_1783267016204.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Sarah-Vieira-15Anos",
@@ -25,21 +25,21 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1782840069223.jpg",
-    "cartao": "assets/cartao_gen_1782840069223.jpg",
+    "capa": "assets/cover_1783267016204.jpg",
+    "cartao": "assets/cartao_gen_1783267016204.jpg",
     "aberturaSlides": [
-      "assets/slide1_1782840069223.mp4"
+      "assets/slide1_1783267016204.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1782840069223.mp4",
+        "filePath": "assets/slide1_1783267016204.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1782840069223.jpg",
-    "folhaPreenchida": "assets/folha_1782840069223.png",
-    "musica": "assets/music_1782840069223.mp3",
+    "folhaVazia": "assets/folha_vazia_1783267016204.jpg",
+    "folhaPreenchida": "assets/folha_1783267016204.png",
+    "musica": "assets/music_1783267016204.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -75,7 +75,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Lista de Presentes",
       "icone": "fa-solid fa-gift",
-      "conteudo": "https://sarah-minhafestade-15.com.br/"
+      "conteudo": "https://www.sarah-minhafestade-15.com.br/lista-de-presentes"
     },
     {
       "tipoAcao": "Link",
