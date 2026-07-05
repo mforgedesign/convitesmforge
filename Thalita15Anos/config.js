@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1783284686856.mp3",
+    "musica": "assets/music_1783285165190.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Thalita15Anos",
@@ -25,27 +25,27 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783284686856.jpg",
-    "cartao": "assets/cartao_gen_1783284686856.jpg",
+    "capa": "assets/cover_1783285165190.jpg",
+    "cartao": "assets/cartao_gen_1783285165190.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783284686856.mp4",
-      "assets/slide2_1783284686856.mp4"
+      "assets/slide1_1783285165190.mp4",
+      "assets/slide2_1783285165190.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783284686856.mp4",
+        "filePath": "assets/slide1_1783285165190.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783284686856.mp4",
+        "filePath": "assets/slide2_1783285165190.mp4",
         "label": "Gerando...",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783284686856.jpg",
-    "folhaPreenchida": "assets/folha_1783284686856.png",
-    "musica": "assets/music_1783284686856.mp3",
+    "folhaVazia": "assets/folha_vazia_1783285165190.jpg",
+    "folhaPreenchida": "assets/folha_1783285165190.png",
+    "musica": "assets/music_1783285165190.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
