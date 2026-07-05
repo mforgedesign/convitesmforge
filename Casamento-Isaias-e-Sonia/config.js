@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1783294350701.mp3",
+    "musica": "assets/music_1783294440620.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Casamento-Isaias-e-Sonia",
@@ -25,27 +25,27 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783294350701.png",
-    "cartao": "assets/cartao_gen_1783294350701.jpg",
+    "capa": "assets/cover_1783294440620.png",
+    "cartao": "assets/cartao_gen_1783294440620.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783294350701.mp4",
-      "assets/slide2_1783294350701.mp4"
+      "assets/slide1_1783294440620.mp4",
+      "assets/slide2_1783294440620.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783294350701.mp4",
+        "filePath": "assets/slide1_1783294440620.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783294350701.mp4",
+        "filePath": "assets/slide2_1783294440620.mp4",
         "label": "Slide 1",
         "type": "video"
       }
     ],
     "folhaVazia": "",
-    "folhaPreenchida": "assets/folha_1783294350701.png",
-    "musica": "assets/music_1783294350701.mp3",
+    "folhaPreenchida": "assets/folha_1783294440620.png",
+    "musica": "assets/music_1783294440620.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
