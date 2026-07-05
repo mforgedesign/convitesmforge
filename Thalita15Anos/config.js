@@ -25,26 +25,26 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783282658175.jpg",
-    "cartao": "assets/cartao_gen_1783282658175.jpg",
+    "capa": "assets/cover_1783283363981.jpg",
+    "cartao": "assets/cartao_gen_1783283363981.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783282658175.mp4",
-      "assets/slide2_1783282658175.mp4"
+      "assets/slide1_1783283363981.mp4",
+      "assets/slide2_1783283363981.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783282658175.mp4",
+        "filePath": "assets/slide1_1783283363981.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783282658175.mp4",
+        "filePath": "assets/slide2_1783283363981.mp4",
         "label": "Gerando...",
         "type": "image"
       }
     ],
     "folhaVazia": "",
-    "folhaPreenchida": "assets/folha_1783282658175.jpg",
+    "folhaPreenchida": "assets/folha_1783283363981.jpg",
     "musica": "",
     "fabric": {
       "saveTheDate": {
@@ -104,7 +104,7 @@ window.config = {
   "config": {
     "exibirMarcaDagua": false,
     "cronometro": true,
-    "buttonColor": "#d81b60",
+    "buttonColor": "#d66b92",
     "buttonSize": 1,
     "isButtonFilled": true,
     "shadowStyle": "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%)",
