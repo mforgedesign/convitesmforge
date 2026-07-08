@@ -5,12 +5,16 @@ window.config = {
     "idade": 15,
     "data": "2026-09-26",
     "hora": "20:00",
-    "endereco": ""
+    "horaTermino": "",
+    "endereco": "",
+    "frase1": "",
+    "frase2": "",
+    "frase3": ""
   },
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1781369214587.mp3",
+    "musica": "assets/music_1783552987529.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Hanna-15-Anos",
@@ -21,13 +25,33 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1781369214587.jpg",
+    "capa": "assets/cover_1783552987529.jpg",
+    "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1781369214587.mp4"
+      "assets/slide1_1783552987529.mp4"
     ],
-    "folhaVazia": "assets/folha_1781369214587.jpg",
-    "folhaPreenchida": "assets/folha_1781369214587.jpg",
-    "musica": "assets/music_1781369214587.mp3",
+    "aberturaSlidesMeta": [
+      {
+        "filePath": "assets/slide1_1783552987529.mp4",
+        "label": "Slide 1",
+        "type": "video"
+      }
+    ],
+    "folhaVazia": "assets/folha_vazia_1783552987529.jpg",
+    "folhaPreenchida": "assets/folha_1783552987529.jpg",
+    "musica": "assets/music_1783552987529.mp3",
+    "fabric": {
+      "saveTheDate": {
+        "referencia": "",
+        "resultado": "",
+        "musicStartSec": 0
+      },
+      "lembrete": {
+        "referencia": "",
+        "resultado": "",
+        "musicStartSec": 0
+      }
+    },
     "fotos": [],
     "popupImagensPorBotao": {}
   },
@@ -72,7 +96,7 @@ window.config = {
     "lembrete": false
   },
   "config": {
-    "exibirMarcaDagua": true,
+    "exibirMarcaDagua": false,
     "cronometro": true,
     "buttonColor": "#0c2b71",
     "buttonSize": 1,
