@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul com Prata",
     "tema": "Floral com Hortências Branco-creme / off-white; Rosas Creme, champagne, marfim claro; Pequenas flores azuis  Azul-claro suave, quase lavanda; Delfínios ou flores em haste",
-    "musica": "assets/music_1783623524331.mp3",
+    "musica": "assets/music_1783624143865.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Ana-Mel-15Anos",
@@ -25,39 +25,45 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783623524331.jpg",
-    "cartao": "assets/cartao_gen_1783623524331.jpg",
+    "capa": "assets/cover_1783624143865.jpg",
+    "cartao": "assets/cartao_gen_1783624143865.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783623524331.mp4",
-      "assets/slide2_1783623524331.jpg",
-      "assets/slide3_1783623524331.mp4",
-      "assets/slide4_1783623524331.jpg"
+      "assets/slide1_1783624143865.mp4",
+      "assets/slide2_1783624143865.jpg",
+      "assets/slide3_1783624143865.mp4",
+      "assets/slide4_1783624143865.mp4",
+      "assets/slide5_1783624143865.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783623524331.mp4",
+        "filePath": "assets/slide1_1783624143865.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783623524331.jpg",
+        "filePath": "assets/slide2_1783624143865.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783623524331.mp4",
+        "filePath": "assets/slide3_1783624143865.mp4",
         "label": "Cena Temática",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783623524331.jpg",
+        "filePath": "assets/slide4_1783624143865.mp4",
         "label": "Prepare-se",
         "type": "image"
+      },
+      {
+        "filePath": "assets/slide5_1783624143865.mp4",
+        "label": "Slide 5",
+        "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783623524331.jpg",
-    "folhaPreenchida": "assets/folha_1783623524331.png",
-    "musica": "assets/music_1783623524331.mp3",
+    "folhaVazia": "assets/folha_vazia_1783624143865.jpg",
+    "folhaPreenchida": "assets/folha_1783624143865.png",
+    "musica": "assets/music_1783624143865.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
