@@ -1493,14 +1493,10 @@
         function openButtonGalleryModal(items) {
             const photos = Array.isArray(items) ? items.filter(Boolean) : [];
             if (!photos.length) return;
-            const track = document.getElementById('buttonGalleryTrack');
-            track.innerHTML = photos.map((src, index) => `
-                <div class="button-gallery-slide" style="--gallery-bg: url('${src.replace(/'/g, "\\'")}')">
-                    <img src="${src}" alt="Foto ${index + 1}" loading="eager">
-                </div>
-            `).join('');
-            track.scrollLeft = track.scrollWidth;
-            document.getElementById('buttonGalleryModal').classList.add('active');
+            galleryPhotos = photos;
+            galleryIndex = 0;
+            updateGalleryImage();
+            document.getElementById('galleryModal').classList.add('active');
         }
 
         function closeModal(id) {
