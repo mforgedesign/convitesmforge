@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa e Dourado",
     "tema": "Jardim das Borboletas",
-    "musica": "assets/music_1783628453926.mp3",
+    "musica": "assets/music_1783628608280.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Amanda-15-Anos",
@@ -25,45 +25,45 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783628453926.png",
-    "cartao": "assets/ef9bb558b5dc487e90187a5415977ebb_1_1783621761_3267_1783628453926.png",
+    "capa": "assets/cover_1783628608280.png",
+    "cartao": "assets/ef9bb558b5dc487e90187a5415977ebb_1_1783621761_3267_1783628608280.png",
     "aberturaSlides": [
-      "assets/slide1_1783628453926.mp4",
-      "assets/slide2_1783628453926.jpg",
-      "assets/slide3_1783628453926.mp4",
-      "assets/slide4_1783628453926.png",
-      "assets/slide5_1783628453926.mp4"
+      "assets/slide1_1783628608280.mp4",
+      "assets/slide2_1783628608280.jpg",
+      "assets/slide3_1783628608280.mp4",
+      "assets/slide4_1783628608280.png",
+      "assets/slide5_1783628608280.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783628453926.mp4",
+        "filePath": "assets/slide1_1783628608280.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783628453926.jpg",
+        "filePath": "assets/slide2_1783628608280.jpg",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1783628453926.mp4",
+        "filePath": "assets/slide3_1783628608280.mp4",
         "label": "Slide 2",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783628453926.png",
+        "filePath": "assets/slide4_1783628608280.png",
         "label": "Slide 4",
         "type": "video"
       },
       {
-        "filePath": "assets/slide5_1783628453926.mp4",
+        "filePath": "assets/slide5_1783628608280.mp4",
         "label": "Slide 5",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783628453926.jpg",
-    "folhaPreenchida": "assets/folha_1783628453926.png",
-    "musica": "assets/music_1783628453926.mp3",
+    "folhaVazia": "assets/folha_vazia_1783628608280.jpg",
+    "folhaPreenchida": "assets/folha_1783628608280.png",
+    "musica": "assets/music_1783628608280.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -77,15 +77,15 @@ window.config = {
       }
     },
     "fotos": [
-      "assets/foto1_1783628453926.png",
-      "assets/foto2_1783628453926.jpg",
-      "assets/foto3_1783628453926.png",
-      "assets/foto4_1783628453926.jpg",
-      "assets/foto5_1783628453926.png",
-      "assets/foto6_1783628453926.jpg",
-      "assets/foto7_1783628453926.jpg",
-      "assets/foto8_1783628453926.jpg",
-      "assets/foto9_1783628453926.jpg"
+      "assets/foto1_1783628608280.png",
+      "assets/foto2_1783628608280.jpg",
+      "assets/foto3_1783628608280.png",
+      "assets/foto4_1783628608280.jpg",
+      "assets/foto5_1783628608280.png",
+      "assets/foto6_1783628608280.jpg",
+      "assets/foto7_1783628608280.jpg",
+      "assets/foto8_1783628608280.jpg",
+      "assets/foto9_1783628608280.jpg"
     ],
     "popupImagensPorBotao": {}
   },
@@ -129,15 +129,15 @@ window.config = {
       "titulo": "Galeria de Fotos",
       "icone": "fa-solid fa-camera",
       "conteudo": [
-        "assets/foto1_1783628453926.png",
-        "assets/foto2_1783628453926.jpg",
-        "assets/foto3_1783628453926.png",
-        "assets/foto4_1783628453926.jpg",
-        "assets/foto5_1783628453926.png",
-        "assets/foto6_1783628453926.jpg",
-        "assets/foto7_1783628453926.jpg",
-        "assets/foto8_1783628453926.jpg",
-        "assets/foto9_1783628453926.jpg"
+        "assets/foto1_1783628608280.png",
+        "assets/foto2_1783628608280.jpg",
+        "assets/foto3_1783628608280.png",
+        "assets/foto4_1783628608280.jpg",
+        "assets/foto5_1783628608280.png",
+        "assets/foto6_1783628608280.jpg",
+        "assets/foto7_1783628608280.jpg",
+        "assets/foto8_1783628608280.jpg",
+        "assets/foto9_1783628608280.jpg"
       ]
     }
   ],
