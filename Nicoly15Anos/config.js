@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1783630909924.mp3",
+    "musica": "assets/music_1783631124776.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Nicoly15Anos",
@@ -25,39 +25,39 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783630909924.jpg",
-    "cartao": "assets/cartao_gen_1783630909924.jpg",
+    "capa": "assets/cover_1783631124776.jpg",
+    "cartao": "assets/cartao_gen_1783631124776.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783630909924.mp4",
-      "assets/slide2_1783630909924.jpg",
-      "assets/slide3_1783630909924.mp4",
-      "assets/slide4_1783630909924.jpg"
+      "assets/slide1_1783631124776.mp4",
+      "assets/slide2_1783631124776.jpg",
+      "assets/slide3_1783631124776.mp4",
+      "assets/slide4_1783631124776.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783630909924.mp4",
+        "filePath": "assets/slide1_1783631124776.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783630909924.jpg",
+        "filePath": "assets/slide2_1783631124776.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783630909924.mp4",
+        "filePath": "assets/slide3_1783631124776.mp4",
         "label": "Prepare-se",
         "type": "image"
       },
       {
-        "filePath": "assets/slide4_1783630909924.jpg",
+        "filePath": "assets/slide4_1783631124776.jpg",
         "label": "Slide 3",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783630909924.jpg",
-    "folhaPreenchida": "assets/folha_1783630909924.jpg",
-    "musica": "assets/music_1783630909924.mp3",
+    "folhaVazia": "assets/folha_vazia_1783631124776.jpg",
+    "folhaPreenchida": "assets/folha_1783631124776.jpg",
+    "musica": "assets/music_1783631124776.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -116,7 +116,7 @@ window.config = {
   "config": {
     "exibirMarcaDagua": false,
     "cronometro": false,
-    "buttonColor": "#0c2b71",
+    "buttonColor": "#d66f77",
     "buttonSize": 1,
     "isButtonFilled": true,
     "shadowStyle": "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%)",
