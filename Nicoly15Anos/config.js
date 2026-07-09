@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "",
     "tema": "",
-    "musica": "assets/music_1783630400189.mp3",
+    "musica": "assets/music_1783630909924.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Nicoly15Anos",
@@ -25,39 +25,39 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783630400189.jpg",
-    "cartao": "assets/cartao_gen_1783630400189.jpg",
+    "capa": "assets/cover_1783630909924.jpg",
+    "cartao": "assets/cartao_gen_1783630909924.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783630400189.mp4",
-      "assets/slide2_1783630400189.jpg",
-      "assets/slide3_1783630400189.mp4",
-      "assets/slide4_1783630400189.jpg"
+      "assets/slide1_1783630909924.mp4",
+      "assets/slide2_1783630909924.jpg",
+      "assets/slide3_1783630909924.mp4",
+      "assets/slide4_1783630909924.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783630400189.mp4",
+        "filePath": "assets/slide1_1783630909924.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783630400189.jpg",
+        "filePath": "assets/slide2_1783630909924.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783630400189.mp4",
+        "filePath": "assets/slide3_1783630909924.mp4",
         "label": "Prepare-se",
         "type": "image"
       },
       {
-        "filePath": "assets/slide4_1783630400189.jpg",
+        "filePath": "assets/slide4_1783630909924.jpg",
         "label": "Slide 3",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783630400189.jpg",
-    "folhaPreenchida": "assets/folha.jpg",
-    "musica": "assets/music_1783630400189.mp3",
+    "folhaVazia": "assets/folha_vazia_1783630909924.jpg",
+    "folhaPreenchida": "assets/folha_1783630909924.jpg",
+    "musica": "assets/music_1783630909924.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
