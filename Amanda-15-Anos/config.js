@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa e Dourado",
     "tema": "Jardim das Borboletas",
-    "musica": "assets/music_1783626670770.mp3",
+    "musica": "assets/music_1783627410441.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Amanda-15-Anos",
@@ -25,45 +25,45 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783626670770.png",
-    "cartao": "assets/ef9bb558b5dc487e90187a5415977ebb_1_1783621761_3267_1783626670770.png",
+    "capa": "assets/cover_1783627410441.png",
+    "cartao": "assets/ef9bb558b5dc487e90187a5415977ebb_1_1783621761_3267_1783627410441.png",
     "aberturaSlides": [
-      "assets/slide1_1783626670770.mp4",
-      "assets/slide2_1783626670770.jpg",
-      "assets/slide3_1783626670770.mp4",
-      "assets/slide4_1783626670770.png",
-      "assets/slide5_1783626670770.mp4"
+      "assets/slide1_1783627410441.mp4",
+      "assets/slide2_1783627410441.jpg",
+      "assets/slide3_1783627410441.mp4",
+      "assets/slide4_1783627410441.png",
+      "assets/slide5_1783627410441.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783626670770.mp4",
+        "filePath": "assets/slide1_1783627410441.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783626670770.jpg",
+        "filePath": "assets/slide2_1783627410441.jpg",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1783626670770.mp4",
+        "filePath": "assets/slide3_1783627410441.mp4",
         "label": "Slide 2",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783626670770.png",
+        "filePath": "assets/slide4_1783627410441.png",
         "label": "Slide 4",
         "type": "video"
       },
       {
-        "filePath": "assets/slide5_1783626670770.mp4",
+        "filePath": "assets/slide5_1783627410441.mp4",
         "label": "Slide 5",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783626670770.jpg",
-    "folhaPreenchida": "assets/folha_1783626670770.png",
-    "musica": "assets/music_1783626670770.mp3",
+    "folhaVazia": "assets/folha_vazia_1783627410441.jpg",
+    "folhaPreenchida": "assets/folha_1783627410441.png",
+    "musica": "assets/music_1783627410441.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -77,11 +77,11 @@ window.config = {
       }
     },
     "fotos": [
-      "assets/foto1_1783626670770.png",
-      "assets/foto2_1783626670770.jpg",
-      "assets/foto3_1783626670770.png",
-      "assets/foto4_1783626670770.jpg",
-      "assets/foto5_1783626670770.png"
+      "assets/foto1_1783627410441.png",
+      "assets/foto2_1783627410441.jpg",
+      "assets/foto3_1783627410441.png",
+      "assets/foto4_1783627410441.jpg",
+      "assets/foto5_1783627410441.png"
     ],
     "popupImagensPorBotao": {}
   },
@@ -125,11 +125,11 @@ window.config = {
       "titulo": "Galeria de Fotos",
       "icone": "fa-solid fa-camera",
       "conteudo": [
-        "assets/foto1_1783626670770.png",
-        "assets/foto2_1783626670770.jpg",
-        "assets/foto3_1783626670770.png",
-        "assets/foto4_1783626670770.jpg",
-        "assets/foto5_1783626670770.png"
+        "assets/foto1_1783627410441.png",
+        "assets/foto2_1783627410441.jpg",
+        "assets/foto3_1783627410441.png",
+        "assets/foto4_1783627410441.jpg",
+        "assets/foto5_1783627410441.png"
       ]
     }
   ],
