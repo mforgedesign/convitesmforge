@@ -13,10 +13,10 @@ window.config = {
   },
   "convite": {
     "paletaCores": "Vermelho, azul, dourado e preto",
-    "tema": "Marvel Super heróis",
-    "musica": "assets/music_1783711487771.mp3",
-    "tipoAbertura": "nenhuma",
-    "particulasAbertura": false,
+    "tema": "Marvel Super heróis Homem de Ferro Homem Aranha Capitão América",
+    "musica": "assets/music_1783722489483.mp3",
+    "tipoAbertura": "longa",
+    "particulasAbertura": true,
     "slug": "Gabriel14Anos",
     "seo": {
       "pageTitle": "Gabriel - Aniversário",
@@ -25,13 +25,39 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "",
-    "cartao": "assets/cartao_gen_1783711487771.jpg",
-    "aberturaSlides": [],
-    "aberturaSlidesMeta": [],
-    "folhaVazia": "assets/folha_vazia_1783711487771.jpg",
-    "folhaPreenchida": "assets/folha_1783711487771.jpg",
-    "musica": "assets/music_1783711487771.mp3",
+    "capa": "assets/cover_1783722489483.jpg",
+    "cartao": "assets/cartao_gen_1783722489483.jpg",
+    "aberturaSlides": [
+      "assets/slide1_1783722489483.mp4",
+      "assets/slide2_1783722489483.jpg",
+      "assets/slide3_1783722489483.mp4",
+      "assets/slide4_1783722489483.jpg"
+    ],
+    "aberturaSlidesMeta": [
+      {
+        "filePath": "assets/slide1_1783722489483.mp4",
+        "label": "Abertura (Vídeo)",
+        "type": "video"
+      },
+      {
+        "filePath": "assets/slide2_1783722489483.jpg",
+        "label": "Convite Especial",
+        "type": "image"
+      },
+      {
+        "filePath": "assets/slide3_1783722489483.mp4",
+        "label": "Cena Tematica",
+        "type": "video"
+      },
+      {
+        "filePath": "assets/slide4_1783722489483.jpg",
+        "label": "Prepare-se",
+        "type": "image"
+      }
+    ],
+    "folhaVazia": "assets/folha_vazia_1783722489483.jpg",
+    "folhaPreenchida": "assets/folha_1783722489483.jpg",
+    "musica": "assets/music_1783722489483.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
