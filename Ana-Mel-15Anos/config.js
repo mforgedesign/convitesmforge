@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul com Prata",
     "tema": "Floral com Hortências Branco-creme / off-white; Rosas Creme, champagne, marfim claro; Pequenas flores azuis  Azul-claro suave, quase lavanda; Delfínios ou flores em haste",
-    "musica": "assets/music_1783653735173.mp3",
+    "musica": "assets/music_1783690599211.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Ana-Mel-15Anos",
@@ -25,45 +25,45 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783653735173.jpg",
-    "cartao": "assets/cartao_gen_1783653735173.jpg",
+    "capa": "assets/cover_1783690599211.jpg",
+    "cartao": "assets/cartao_gen_1783690599211.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783653735173.mp4",
-      "assets/slide2_1783653735173.jpg",
-      "assets/slide3_1783653735173.mp4",
-      "assets/slide4_1783653735173.mp4",
-      "assets/slide5_1783653735173.mp4"
+      "assets/slide1_1783690599211.mp4",
+      "assets/slide2_1783690599211.jpg",
+      "assets/slide3_1783690599211.mp4",
+      "assets/slide4_1783690599211.mp4",
+      "assets/slide5_1783690599211.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783653735173.mp4",
+        "filePath": "assets/slide1_1783690599211.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783653735173.jpg",
+        "filePath": "assets/slide2_1783690599211.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783653735173.mp4",
+        "filePath": "assets/slide3_1783690599211.mp4",
         "label": "Cena Temática",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783653735173.mp4",
+        "filePath": "assets/slide4_1783690599211.mp4",
         "label": "Prepare-se",
         "type": "image"
       },
       {
-        "filePath": "assets/slide5_1783653735173.mp4",
+        "filePath": "assets/slide5_1783690599211.mp4",
         "label": "Slide 5",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783653735173.jpg",
-    "folhaPreenchida": "assets/folha_1783653735173.png",
-    "musica": "assets/music_1783653735173.mp3",
+    "folhaVazia": "assets/folha_vazia_1783690599211.jpg",
+    "folhaPreenchida": "assets/folha_1783690599211.png",
+    "musica": "assets/music_1783690599211.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -106,7 +106,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "conteudo": "https://docs.google.com/forms/d/e/1FAIpQLSdGrD6HiI6ofwpq2he1WWea-7nWBNPe3qHZVK3BYv_26UqwIg/viewform?usp=dialog"
+      "conteudo": "https://legendary-tartufo-0a51a9.netlify.app/"
     }
   ],
   "upsell": {
