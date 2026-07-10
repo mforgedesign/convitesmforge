@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Azul, dourado e vermelho",
     "tema": "Princesa",
-    "musica": "assets/music_1783702484665.mp3",
+    "musica": "assets/music_1783702820034.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Lara-Mirella-15Anos",
@@ -25,51 +25,45 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783702484665.png",
+    "capa": "assets/cover_1783702820034.png",
     "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1783702484665.mp4",
-      "assets/slide2_1783702484665.mp4",
-      "assets/slide3_1783702484665.mp4",
-      "assets/slide4_1783702484665.mp4",
-      "assets/slide5_1783702484665.mp4",
-      ""
+      "assets/slide1_1783702820034.mp4",
+      "assets/slide2_1783702820034.mp4",
+      "assets/slide3_1783702820034.mp4",
+      "assets/slide4_1783702820034.mp4",
+      "assets/slide5_1783702820034.mp4"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783702484665.mp4",
+        "filePath": "assets/slide1_1783702820034.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783702484665.mp4",
+        "filePath": "assets/slide2_1783702820034.mp4",
         "label": "Slide 2",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1783702484665.mp4",
+        "filePath": "assets/slide3_1783702820034.mp4",
         "label": "Slide 3",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783702484665.mp4",
+        "filePath": "assets/slide4_1783702820034.mp4",
         "label": "Slide 4",
         "type": "video"
       },
       {
-        "filePath": "assets/slide5_1783702484665.mp4",
+        "filePath": "assets/slide5_1783702820034.mp4",
         "label": "Slide 5",
-        "type": "video"
-      },
-      {
-        "filePath": "",
-        "label": "Slide 6",
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783702484665.jpg",
-    "folhaPreenchida": "assets/folha_1783702484665.jpg",
-    "musica": "assets/music_1783702484665.mp3",
+    "folhaVazia": "assets/folha_vazia_1783702820034.jpg",
+    "folhaPreenchida": "assets/folha_1783702820034.jpg",
+    "musica": "assets/music_1783702820034.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
