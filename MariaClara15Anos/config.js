@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Verde com Dourado",
     "tema": "Princesa",
-    "musica": "assets/music_1783546132238.mp3",
+    "musica": "assets/music_1783693187968.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "MariaClara15Anos",
@@ -25,43 +25,43 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783546132238.jpg",
-    "cartao": "assets/cartao_gen_1783546132238.jpg",
+    "capa": "assets/cover_1783693187968.jpg",
+    "cartao": "assets/cartao_gen_1783693187968.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783546132238.mp4",
-      "assets/slide2_1783546132238.jpg",
-      "assets/slide3_1783546132238.mp4",
-      "assets/slide4_1783546132238.jpg"
+      "assets/slide1_1783693187968.mp4",
+      "assets/slide2_1783693187968.jpg",
+      "assets/slide3_1783693187968.mp4",
+      "assets/slide4_1783693187968.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783546132238.mp4",
+        "filePath": "assets/slide1_1783693187968.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783546132238.jpg",
+        "filePath": "assets/slide2_1783693187968.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783546132238.mp4",
+        "filePath": "assets/slide3_1783693187968.mp4",
         "label": "Cena Temática",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783546132238.jpg",
+        "filePath": "assets/slide4_1783693187968.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783546132238.png",
-    "folhaPreenchida": "assets/folha_1783546132238.jpg",
-    "musica": "assets/music_1783546132238.mp3",
+    "folhaVazia": "assets/folha_vazia_1783693187968.png",
+    "folhaPreenchida": "assets/folha_1783693187968.jpg",
+    "musica": "assets/music_1783693187968.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "assets/fabric_save_the_date_ref_1783546132238.jpg",
-        "resultado": "assets/save_the_date_1783462494404_1783546132238.mp4",
+        "referencia": "assets/fabric_save_the_date_ref_1783693187968.jpg",
+        "resultado": "assets/save_the_date_1783462494404_1783693187968.mp4",
         "musicStartSec": 0
       },
       "lembrete": {
@@ -114,7 +114,7 @@ window.config = {
     "lembrete": false
   },
   "config": {
-    "exibirMarcaDagua": true,
+    "exibirMarcaDagua": false,
     "cronometro": true,
     "buttonColor": "#0f5a2a",
     "buttonSize": 1,
