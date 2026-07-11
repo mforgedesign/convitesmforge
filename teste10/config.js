@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa-Quartzo, Lilás, Verde-Sálvia, Azul-Serenity, Rosé e Branco off-white",
     "tema": "Floral",
-    "musica": "assets/music_1783798996709.mp3",
+    "musica": "assets/music_1783799350619.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "teste10",
@@ -25,33 +25,33 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783798996709.png",
+    "capa": "assets/cover_1783799350619.png",
     "cartao": "",
     "aberturaSlides": [
-      "assets/slide1_1783798996709.mp4",
-      "assets/slide2_1783798996709.jpg",
-      "assets/slide3_1783798996709.jpg"
+      "assets/slide1_1783799350619.mp4",
+      "assets/slide2_1783799350619.jpg",
+      "assets/slide3_1783799350619.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783798996709.mp4",
+        "filePath": "assets/slide1_1783799350619.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783798996709.jpg",
+        "filePath": "assets/slide2_1783799350619.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783798996709.jpg",
+        "filePath": "assets/slide3_1783799350619.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783798996709.png",
-    "folhaPreenchida": "assets/folha_1783798996709.jpg",
-    "musica": "assets/music_1783798996709.mp3",
+    "folhaVazia": "assets/folha_vazia_1783799350619.png",
+    "folhaPreenchida": "assets/folha_1783799350619.jpg",
+    "musica": "assets/music_1783799350619.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
@@ -67,9 +67,9 @@ window.config = {
       }
     },
     "fotos": [
-      "assets/foto1_1783798996709.png",
-      "assets/foto2_1783798996709.png",
-      "assets/foto3_1783798996709.png"
+      "assets/foto1_1783799350619.png",
+      "assets/foto2_1783799350619.png",
+      "assets/foto3_1783799350619.png"
     ],
     "popupImagensPorBotao": {}
   },
@@ -113,9 +113,9 @@ window.config = {
       "titulo": "Galeria de Fotos",
       "icone": "fa-solid fa-camera",
       "conteudo": [
-        "assets/foto1_1783798996709.png",
-        "assets/foto2_1783798996709.png",
-        "assets/foto3_1783798996709.png"
+        "assets/foto1_1783799350619.png",
+        "assets/foto2_1783799350619.png",
+        "assets/foto3_1783799350619.png"
       ]
     }
   ],
