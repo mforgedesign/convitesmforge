@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa-Quartzo, Lilás, Verde-Sálvia, Azul-Serenity, Rosé e Branco off-white",
     "tema": "Floral",
-    "musica": "assets/music_1783782678997.mp3",
+    "musica": "assets/music_1783783140947.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "SarahEvelen15Anos",
@@ -25,37 +25,37 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783782678997.png",
-    "cartao": "assets/cartao_gen_1783782678997.jpg",
+    "capa": "assets/cover_1783783140947.png",
+    "cartao": "assets/cartao_gen_1783783140947.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783782678997.mp4",
-      "assets/slide2_1783782678997.jpg",
-      "assets/slide3_1783782678997.jpg"
+      "assets/slide1_1783783140947.mp4",
+      "assets/slide2_1783783140947.jpg",
+      "assets/slide3_1783783140947.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783782678997.mp4",
+        "filePath": "assets/slide1_1783783140947.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783782678997.jpg",
+        "filePath": "assets/slide2_1783783140947.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783782678997.jpg",
+        "filePath": "assets/slide3_1783783140947.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783782678997.png",
-    "folhaPreenchida": "assets/folha_1783782678997.jpg",
-    "musica": "assets/music_1783782678997.mp3",
+    "folhaVazia": "assets/folha_vazia_1783783140947.png",
+    "folhaPreenchida": "assets/folha_1783783140947.jpg",
+    "musica": "assets/music_1783783140947.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "assets/fabric_save_the_date_ref_1783782678997.jpg",
-        "resultado": "assets/save_the_date_1783782587020_1783782678997.mp4",
+        "referencia": "assets/fabric_save_the_date_ref_1783783140947.jpg",
+        "resultado": "assets/save_the_date_1783782587020_1783783140947.mp4",
         "musicStartSec": 0
       },
       "lembrete": {
@@ -64,7 +64,16 @@ window.config = {
         "musicStartSec": 0
       }
     },
-    "fotos": [],
+    "fotos": [
+      "assets/foto1_1783783140947.jpg",
+      "assets/foto2_1783783140947.jpg",
+      "assets/foto3_1783783140947.jpg",
+      "assets/foto4_1783783140947.jpg",
+      "assets/foto5_1783783140947.jpg",
+      "assets/foto6_1783783140947.jpg",
+      "assets/foto7_1783783140947.jpg",
+      "assets/foto8_1783783140947.jpg"
+    ],
     "popupImagensPorBotao": {}
   },
   "botoes": [
@@ -110,7 +119,7 @@ window.config = {
   "config": {
     "exibirMarcaDagua": false,
     "cronometro": true,
-    "buttonColor": "#8e5aa8",
+    "buttonColor": "#cea1f2",
     "buttonSize": 1,
     "isButtonFilled": true,
     "shadowStyle": "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%)",
