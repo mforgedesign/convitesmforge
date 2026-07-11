@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa Pink e Rosa Claro",
     "tema": "Floral",
-    "musica": "assets/music_1783797240807.mp3",
+    "musica": "assets/music_1783797272055.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "SarahEvelen15Anos",
@@ -25,37 +25,37 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783797240807.png",
-    "cartao": "assets/chatgpt_image_11_de_jul_de_2026_12_43_59_1783797240807.png",
+    "capa": "assets/cover_1783797272055.png",
+    "cartao": "assets/chatgpt_image_11_de_jul_de_2026_12_43_59_1783797272055.png",
     "aberturaSlides": [
-      "assets/slide1_1783797240807.mp4",
-      "assets/slide2_1783797240807.jpg",
-      "assets/slide3_1783797240807.jpg"
+      "assets/slide1_1783797272055.mp4",
+      "assets/slide2_1783797272055.jpg",
+      "assets/slide3_1783797272055.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783797240807.mp4",
+        "filePath": "assets/slide1_1783797272055.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783797240807.jpg",
+        "filePath": "assets/slide2_1783797272055.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783797240807.jpg",
+        "filePath": "assets/slide3_1783797272055.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783797240807.png",
-    "folhaPreenchida": "assets/folha_1783797240807.png",
-    "musica": "assets/music_1783797240807.mp3",
+    "folhaVazia": "assets/folha_vazia_1783797272055.png",
+    "folhaPreenchida": "assets/folha_1783797272055.png",
+    "musica": "assets/music_1783797272055.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "assets/fabric_save_the_date_ref_1783797240807.jpg",
-        "resultado": "assets/save_the_date_1783784810509_1783797240807.mp4",
+        "referencia": "assets/fabric_save_the_date_ref_1783797272055.jpg",
+        "resultado": "assets/save_the_date_1783784810509_1783797272055.mp4",
         "musicStartSec": 0,
         "durationSec": 20
       },
@@ -67,14 +67,14 @@ window.config = {
       }
     },
     "fotos": [
-      "assets/foto1_1783797240807.jpg",
-      "assets/foto2_1783797240807.jpg",
-      "assets/foto3_1783797240807.jpg",
-      "assets/foto4_1783797240807.jpg",
-      "assets/foto5_1783797240807.jpg",
-      "assets/foto6_1783797240807.jpg",
-      "assets/foto7_1783797240807.jpg",
-      "assets/foto8_1783797240807.jpg"
+      "assets/foto1_1783797272055.jpg",
+      "assets/foto2_1783797272055.jpg",
+      "assets/foto3_1783797272055.jpg",
+      "assets/foto4_1783797272055.jpg",
+      "assets/foto5_1783797272055.jpg",
+      "assets/foto6_1783797272055.jpg",
+      "assets/foto7_1783797272055.jpg",
+      "assets/foto8_1783797272055.jpg"
     ],
     "popupImagensPorBotao": {}
   },
@@ -91,7 +91,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "whatsapp": "5511988509403",
+      "whatsapp": "5522997007365",
       "rsvpConfig": {
         "exibirNome": true,
         "exibirWhatsapp": false,
@@ -118,14 +118,14 @@ window.config = {
       "titulo": "Galeria de Fotos",
       "icone": "fa-solid fa-camera",
       "conteudo": [
-        "assets/foto1_1783797240807.jpg",
-        "assets/foto2_1783797240807.jpg",
-        "assets/foto3_1783797240807.jpg",
-        "assets/foto4_1783797240807.jpg",
-        "assets/foto5_1783797240807.jpg",
-        "assets/foto6_1783797240807.jpg",
-        "assets/foto7_1783797240807.jpg",
-        "assets/foto8_1783797240807.jpg"
+        "assets/foto1_1783797272055.jpg",
+        "assets/foto2_1783797272055.jpg",
+        "assets/foto3_1783797272055.jpg",
+        "assets/foto4_1783797272055.jpg",
+        "assets/foto5_1783797272055.jpg",
+        "assets/foto6_1783797272055.jpg",
+        "assets/foto7_1783797272055.jpg",
+        "assets/foto8_1783797272055.jpg"
       ]
     }
   ],
