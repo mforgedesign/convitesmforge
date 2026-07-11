@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa Pink e Rosa Claro",
     "tema": "Floral",
-    "musica": "assets/music_1783784928157.mp3",
+    "musica": "assets/music_1783785082458.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "SarahEvelen15Anos",
@@ -25,43 +25,37 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783784928157.png",
-    "cartao": "assets/chatgpt_image_11_de_jul_de_2026_12_43_59_1783784928157.png",
+    "capa": "assets/cover_1783785082458.png",
+    "cartao": "assets/chatgpt_image_11_de_jul_de_2026_12_43_59_1783785082458.png",
     "aberturaSlides": [
-      "assets/slide1_1783784928157.mp4",
-      "assets/slide2_1783784928157.jpg",
-      "assets/slide3_1783784928157.mp4",
-      "assets/slide4_1783784928157.jpg"
+      "assets/slide1_1783785082458.mp4",
+      "assets/slide2_1783785082458.jpg",
+      "assets/slide3_1783785082458.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783784928157.mp4",
+        "filePath": "assets/slide1_1783785082458.mp4",
         "label": "Abertura (Video)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783784928157.jpg",
+        "filePath": "assets/slide2_1783785082458.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783784928157.mp4",
-        "label": "Cena Tematica",
-        "type": "video"
-      },
-      {
-        "filePath": "assets/slide4_1783784928157.jpg",
+        "filePath": "assets/slide3_1783785082458.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783784928157.png",
-    "folhaPreenchida": "assets/folha_1783784928157.png",
-    "musica": "assets/music_1783784928157.mp3",
+    "folhaVazia": "assets/folha_vazia_1783785082458.png",
+    "folhaPreenchida": "assets/folha_1783785082458.png",
+    "musica": "assets/music_1783785082458.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "assets/fabric_save_the_date_ref_1783784928157.jpg",
-        "resultado": "assets/save_the_date_1783784810509_1783784928157.mp4",
+        "referencia": "assets/fabric_save_the_date_ref_1783785082458.jpg",
+        "resultado": "assets/save_the_date_1783784810509_1783785082458.mp4",
         "musicStartSec": 0,
         "durationSec": 20
       },
@@ -73,14 +67,14 @@ window.config = {
       }
     },
     "fotos": [
-      "assets/foto1_1783784928157.jpg",
-      "assets/foto2_1783784928157.jpg",
-      "assets/foto3_1783784928157.jpg",
-      "assets/foto4_1783784928157.jpg",
-      "assets/foto5_1783784928157.jpg",
-      "assets/foto6_1783784928157.jpg",
-      "assets/foto7_1783784928157.jpg",
-      "assets/foto8_1783784928157.jpg"
+      "assets/foto1_1783785082458.jpg",
+      "assets/foto2_1783785082458.jpg",
+      "assets/foto3_1783785082458.jpg",
+      "assets/foto4_1783785082458.jpg",
+      "assets/foto5_1783785082458.jpg",
+      "assets/foto6_1783785082458.jpg",
+      "assets/foto7_1783785082458.jpg",
+      "assets/foto8_1783785082458.jpg"
     ],
     "popupImagensPorBotao": {}
   },
