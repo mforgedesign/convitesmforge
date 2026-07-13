@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Verde com Dourado",
     "tema": "Princesa",
-    "musica": "assets/music_1783695358533.mp3",
+    "musica": "assets/music_1783954489253.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "MariaClara15Anos",
@@ -25,49 +25,51 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783695358533.jpg",
-    "cartao": "assets/cartao_gen_1783695358533.jpg",
+    "capa": "assets/cover_1783954489253.jpg",
+    "cartao": "assets/cartao_gen_1783954489253.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783695358533.mp4",
-      "assets/slide2_1783695358533.jpg",
-      "assets/slide3_1783695358533.mp4",
-      "assets/slide4_1783695358533.jpg"
+      "assets/slide1_1783954489253.mp4",
+      "assets/slide2_1783954489253.jpg",
+      "assets/slide3_1783954489253.mp4",
+      "assets/slide4_1783954489253.jpg"
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783695358533.mp4",
+        "filePath": "assets/slide1_1783954489253.mp4",
         "label": "Abertura (Vídeo)",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783695358533.jpg",
+        "filePath": "assets/slide2_1783954489253.jpg",
         "label": "Convite Especial",
         "type": "image"
       },
       {
-        "filePath": "assets/slide3_1783695358533.mp4",
+        "filePath": "assets/slide3_1783954489253.mp4",
         "label": "Cena Temática",
         "type": "video"
       },
       {
-        "filePath": "assets/slide4_1783695358533.jpg",
+        "filePath": "assets/slide4_1783954489253.jpg",
         "label": "Prepare-se",
         "type": "image"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783695358533.png",
-    "folhaPreenchida": "assets/folha_1783695358533.jpg",
-    "musica": "assets/music_1783695358533.mp3",
+    "folhaVazia": "assets/folha_vazia_1783954489253.png",
+    "folhaPreenchida": "assets/folha_1783954489253.jpg",
+    "musica": "assets/music_1783954489253.mp3",
     "fabric": {
       "saveTheDate": {
-        "referencia": "assets/fabric_save_the_date_ref_1783695358533.jpg",
-        "resultado": "assets/save_the_date_1783462494404_1783695358533.mp4",
-        "musicStartSec": 0
+        "referencia": "assets/fabric_save_the_date_ref_1783954489253.jpg",
+        "resultado": "assets/save_the_date_1783462494404_1783954489253.mp4",
+        "musicStartSec": 0,
+        "durationSec": 20
       },
       "lembrete": {
         "referencia": "",
         "resultado": "",
-        "musicStartSec": 0
+        "musicStartSec": 0,
+        "durationSec": 20
       }
     },
     "fotos": [],
@@ -86,7 +88,7 @@ window.config = {
       "tipoVisual": "css",
       "titulo": "Confirmar Presença",
       "icone": "fa-solid fa-check",
-      "whatsapp": "5511988509403",
+      "whatsapp": "5547988359497",
       "rsvpConfig": {
         "exibirNome": true,
         "exibirWhatsapp": false,
