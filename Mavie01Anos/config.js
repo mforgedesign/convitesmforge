@@ -4,7 +4,7 @@ window.config = {
     "nome": "Mavie",
     "idade": 1,
     "data": "2026-08-23",
-    "hora": "",
+    "hora": "18:00",
     "horaTermino": "",
     "endereco": "Av. Francisco de Angelis, 216 - Vila Joaquim Inacio, Campinas - SP, 13043-030, Brasil",
     "frase1": "",
@@ -14,39 +14,39 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa e Rosé Gold",
     "tema": "Jardim Encantado",
-    "musica": "assets/music_1783882530892.mp3",
+    "musica": "assets/music_1783906364383.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Mavie01Anos",
     "seo": {
-      "pageTitle": "",
+      "pageTitle": "Convite Especial",
       "ogTitle": "Você recebeu um convite especial!",
       "ogDescription": "Embarque nessa noite mágica. Clique para ver os detalhes."
     }
   },
   "assets": {
-    "capa": "assets/cover_1783882530892.jpg",
-    "cartao": "assets/cartao_chatgpt_1783882530892.jpg",
+    "capa": "assets/cover_1783906364383.jpg",
+    "cartao": "assets/cartao_chatgpt_1783906364383.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783882530892.mp4",
-      "assets/slide2_1783882530892.mp4",
-      "assets/slide3_1783882530892.mp4",
+      "assets/slide1_1783906364383.mp4",
+      "assets/slide2_1783906364383.mp4",
+      "assets/slide3_1783906364383.mp4",
       "",
       ""
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783882530892.mp4",
+        "filePath": "assets/slide1_1783906364383.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783882530892.mp4",
+        "filePath": "assets/slide2_1783906364383.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1783882530892.mp4",
+        "filePath": "assets/slide3_1783906364383.mp4",
         "label": "Slide 2",
         "type": "video"
       },
@@ -61,9 +61,9 @@ window.config = {
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783882530892.jpg",
-    "folhaPreenchida": "assets/folha_1783882530892.png",
-    "musica": "assets/music_1783882530892.mp3",
+    "folhaVazia": "assets/folha_vazia_1783906364383.jpg",
+    "folhaPreenchida": "assets/folha_1783906364383.png",
+    "musica": "assets/music_1783906364383.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
