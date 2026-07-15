@@ -14,7 +14,7 @@ window.config = {
   "convite": {
     "paletaCores": "Rosa e Rosé Gold",
     "tema": "Jardim Encantado",
-    "musica": "assets/music_1783949187338.mp3",
+    "musica": "assets/music_1784154217392.mp3",
     "tipoAbertura": "longa",
     "particulasAbertura": true,
     "slug": "Mavie01Anos",
@@ -25,28 +25,28 @@ window.config = {
     }
   },
   "assets": {
-    "capa": "assets/cover_1783949187338.jpg",
-    "cartao": "assets/cartao_chatgpt_1783949187338.jpg",
+    "capa": "assets/cover_1784154217392.jpg",
+    "cartao": "assets/cartao_chatgpt_1784154217392.jpg",
     "aberturaSlides": [
-      "assets/slide1_1783949187338.mp4",
-      "assets/slide2_1783949187338.mp4",
-      "assets/slide3_1783949187338.mp4",
+      "assets/slide1_1784154217392.mp4",
+      "assets/slide2_1784154217392.mp4",
+      "assets/slide3_1784154217392.mp4",
       "",
       ""
     ],
     "aberturaSlidesMeta": [
       {
-        "filePath": "assets/slide1_1783949187338.mp4",
+        "filePath": "assets/slide1_1784154217392.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide2_1783949187338.mp4",
+        "filePath": "assets/slide2_1784154217392.mp4",
         "label": "Slide 1",
         "type": "video"
       },
       {
-        "filePath": "assets/slide3_1783949187338.mp4",
+        "filePath": "assets/slide3_1784154217392.mp4",
         "label": "Slide 2",
         "type": "video"
       },
@@ -61,19 +61,25 @@ window.config = {
         "type": "video"
       }
     ],
-    "folhaVazia": "assets/folha_vazia_1783949187338.jpg",
-    "folhaPreenchida": "assets/folha_1783949187338.png",
-    "musica": "assets/music_1783949187338.mp3",
+    "folhaVazia": "assets/folha_vazia_1784154217392.jpg",
+    "folhaPreenchida": "assets/folha_1784154217392.png",
+    "musica": "assets/music_1784154217392.mp3",
     "fabric": {
       "saveTheDate": {
         "referencia": "",
         "resultado": "",
+        "musicaPersonalizada": "",
+        "musicSource": "convite",
+        "hasMusic": true,
         "musicStartSec": 0,
         "durationSec": 20
       },
       "lembrete": {
         "referencia": "",
         "resultado": "",
+        "musicaPersonalizada": "",
+        "musicSource": "convite",
+        "hasMusic": true,
         "musicStartSec": 0,
         "durationSec": 20
       }
