@@ -14,7 +14,7 @@
     <!-- SEO / Open Graph (To be dynamically updated) -->
     <meta property="og:title" content="Você recebeu um convite especial!">
     <meta property="og:description" content="Embarque nessa noite mágica. Clique para ver os detalhes.">
-    <meta property="og:image" content="https://clique-e-abra.mforge.com.br/Casamento-Isaias-e-Sonia/assets/cover_1783359585101.png">
+    <meta property="og:image" content="https://clique-e-abra.mforge.com.br/Casamento-Isaias-e-Sonia/assets/cover_1788569620852.png">
     <meta property="og:type" content="website">
 
     <!-- Envelope Favicon -->
@@ -22,7 +22,7 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path d='M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z'/></svg>">
 
     <!-- CSS / Libraries / Config -->
-    <script src="config.js?v=1783359585101"></script>
+    <script src="config.js?v=1788569620852"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -699,9 +699,9 @@
             }
 
             // Sparkles
-            document.getElementById('brilhoEsquerdo').src = "assets/brilho_esquerdo_1783359585101.gif";
-            document.getElementById('brilhoDireito').src = "assets/brilho_direito_1783359585101.gif";
-            document.getElementById('brilhoCentro').src = "assets/brilho_centro_1783359585101.gif";
+            document.getElementById('brilhoEsquerdo').src = "assets/brilho_esquerdo_1788569620852.gif";
+            document.getElementById('brilhoDireito').src = "assets/brilho_direito_1788569620852.gif";
+            document.getElementById('brilhoCentro').src = "assets/brilho_centro_1788569620852.gif";
 
             // Abertura Media — preload ALL slides and show progress bar
             slideAssets = config.assets.aberturaSlides || [];
@@ -1802,6 +1802,177 @@
         }
 
         init();
+    </script>
+
+    <script id="builder-music-range-fade-runtime">
+        (() => {
+            const audio = document.getElementById('musicaFundo');
+            if (!audio) return;
+            const fadeSeconds = 1;
+            let initialStartApplied = false;
+            let baseVolume = null;
+            let fadeFrame = null;
+            const configuredRange = () => {
+                const configuredStart = Number(window.config?.assets?.musicStartSec ?? window.config?.convite?.musicStartSec ?? 0);
+                const configuredEnd = window.config?.assets?.musicEndSec ?? window.config?.convite?.musicEndSec;
+                const start = Number.isFinite(configuredStart) ? Math.max(0, configuredStart) : 0;
+                const parsedEnd = configuredEnd === null || typeof configuredEnd === 'undefined' || configuredEnd === ''
+                    ? null
+                    : Number(configuredEnd);
+                const end = Number.isFinite(parsedEnd) && parsedEnd > start ? parsedEnd : null;
+                return { start, end };
+            };
+            const applyFadeVolume = () => {
+                if (baseVolume === null) baseVolume = audio.volume;
+                const { start, end } = configuredRange();
+                const customRange = start > 0 || end !== null;
+                if (!customRange) {
+                    audio.volume = baseVolume;
+                    return;
+                }
+                const playbackEnd = end === null && Number.isFinite(audio.duration) ? audio.duration : end;
+                const fadeIn = Math.max(0, Math.min(1, (audio.currentTime - start) / fadeSeconds));
+                const fadeOut = playbackEnd === null
+                    ? 1
+                    : Math.max(0, Math.min(1, (playbackEnd - audio.currentTime) / fadeSeconds));
+                audio.volume = baseVolume * Math.min(fadeIn, fadeOut);
+            };
+            const stopFadeLoop = () => {
+                if (fadeFrame !== null) cancelAnimationFrame(fadeFrame);
+                fadeFrame = null;
+            };
+            const startFadeLoop = () => {
+                stopFadeLoop();
+                const tick = () => {
+                    applyFadeVolume();
+                    if (!audio.paused) fadeFrame = requestAnimationFrame(tick);
+                };
+                tick();
+            };
+            const applyConfiguredStart = () => {
+                if (initialStartApplied) return;
+                const { start } = configuredRange();
+                const max = Number.isFinite(audio.duration) && audio.duration > 0 ? Math.max(0, audio.duration - 0.1) : start;
+                audio.currentTime = Math.min(start, max);
+                initialStartApplied = true;
+            };
+            audio.loop = false;
+            audio.addEventListener('loadedmetadata', applyConfiguredStart);
+            audio.addEventListener('play', applyConfiguredStart);
+            audio.addEventListener('play', startFadeLoop);
+            audio.addEventListener('pause', stopFadeLoop);
+            audio.addEventListener('timeupdate', () => {
+                const { start, end } = configuredRange();
+                if (end !== null && audio.currentTime >= end) {
+                    audio.currentTime = start;
+                    applyFadeVolume();
+                }
+            });
+            audio.addEventListener('ended', () => {
+                const { start } = configuredRange();
+                audio.currentTime = start;
+                applyFadeVolume();
+                audio.play().catch(() => {});
+            });
+        })();
+    </script>
+
+    <script id="builder-button-gradient-runtime">
+        (() => {
+            const isHexColor = value => /^#[0-9a-f]{6}$/i.test(String(value || '').trim());
+            const readSettings = () => {
+                const visual = window.config?.config || {};
+                const start = isHexColor(visual.buttonColor) ? visual.buttonColor : '#751a1a';
+                const end = isHexColor(visual.buttonGradientColor) ? visual.buttonGradientColor : start;
+                return {
+                    enabled: visual.buttonGradientEnabled === true && visual.isButtonFilled !== false,
+                    start,
+                    end
+                };
+            };
+            const applyGradient = () => {
+                const grid = document.getElementById('gridBotoes');
+                if (!grid) return;
+                const settings = readSettings();
+                document.documentElement.style.setProperty('--button-gradient-color', settings.end);
+                grid.querySelectorAll('a > div.rounded-full.border > div.rounded-full').forEach(button => {
+                    if (settings.enabled) {
+                        button.dataset.builderButtonGradient = 'true';
+                        button.style.backgroundColor = settings.start;
+                        button.style.backgroundImage = 'linear-gradient(135deg, ' + settings.start + ', ' + settings.end + ')';
+                    } else if (button.dataset.builderButtonGradient === 'true') {
+                        delete button.dataset.builderButtonGradient;
+                        button.style.removeProperty('background-image');
+                    }
+                });
+            };
+            const grid = document.getElementById('gridBotoes');
+            if (grid) new MutationObserver(applyGradient).observe(grid, { childList: true, subtree: true });
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', applyGradient);
+            else applyGradient();
+            window.addEventListener('load', applyGradient);
+        })();
+    </script>
+
+    <style id="builder-rsvp-message-style">
+        .builder-rsvp-message {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.24);
+            border-radius: 10px;
+            background: var(--button-color, #751a1a);
+            color: #ffffff;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 600;
+            line-height: 1.45;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <script id="builder-rsvp-message-runtime">
+        (() => {
+            const normalizedMessage = button => String(button?.rsvpConfig?.textoConfirmacao || '').trim().slice(0, 500);
+            const decorateRsvpPopup = button => {
+                const message = normalizedMessage(button);
+                if (!message) return;
+                const modal = document.getElementById('popupHtmlModal');
+                const content = document.getElementById('popupHtmlContent');
+                if (!modal?.classList.contains('active') || !content || content.querySelector('.builder-rsvp-message')) return;
+                const fields = content.querySelector('.space-y-4') || content.firstElementChild;
+                if (!fields) return;
+                const note = document.createElement('div');
+                note.className = 'builder-rsvp-message';
+                note.setAttribute('role', 'note');
+                note.textContent = message;
+                const visual = window.config?.config || {};
+                const computedColor = getComputedStyle(document.documentElement).getPropertyValue('--button-color').trim();
+                const startColor = visual.buttonColor || visual.botoes?.cor || computedColor || '#751a1a';
+                note.style.backgroundColor = startColor;
+                if (visual.buttonGradientEnabled === true && /^#[0-9a-f]{6}$/i.test(String(visual.buttonGradientColor || ''))) {
+                    note.style.backgroundImage = 'linear-gradient(135deg, ' + startColor + ', ' + visual.buttonGradientColor + ')';
+                }
+                const nameField = content.querySelector('#rsvp-name');
+                const insertionPoint = nameField?.parentElement || fields.firstChild;
+                fields.insertBefore(note, insertionPoint || null);
+            };
+            const install = () => {
+                const original = window.openRSVPModal;
+                if (typeof original !== 'function' || original.__builderRsvpMessageRuntime === true) return;
+                const wrapped = function(button) {
+                    const result = original.apply(this, arguments);
+                    decorateRsvpPopup(button);
+                    return result;
+                };
+                Object.defineProperty(wrapped, '__builderRsvpMessageRuntime', { value: true });
+                window.openRSVPModal = wrapped;
+            };
+            install();
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', install);
+            window.addEventListener('load', install);
+        })();
     </script>
 </body>
 
